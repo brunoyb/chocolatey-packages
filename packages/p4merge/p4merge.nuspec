@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>P4Merge</id>
+    <version>2014.1</version>
+    <title>P4Merge, the Perforce Visual Merge Tool</title>
+    <authors>Perforce Software,Inc.</authors>
+    <owners>H. Alan Stevens</owners>
+    <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
+    <projectUrl>http://www.perforce.com/product/components/perforce_visual_merge_and_diff_tools</projectUrl>
+    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/P4Merge/p4merge.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>P4Merge is an excellent, free diff and merge tool. Perforce Visual Merge and Diff Tools provide a unique perspective into the context in which change happens.
+    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <summary>P4Merge is an excellent, free diff and merge tool.</summary>
+    <tags>diff merge chocolatey</tags>
+  </metadata>
+</package>
