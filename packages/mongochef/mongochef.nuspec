@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mongochef</id>
+    <version>3.5.1.20160501</version>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <owners>Bruno Baldochi</owners>
+    <title>MongoChef</title>
+    <authors>3T</authors>
+    <projectUrl>http://3t.io/mongochef/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/138dd9567f8b3b7414cee29d1ea2775e1a5fe10e/icons/mongochef.png</iconUrl>
+    <copyright>3T Software Labs GmbH</copyright>
+    <licenseUrl>http://3t.io/mongochef/download/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>mongochef mongodb mongo nosql database db admin</tags>
+    <summary>Professional MongoDB GUI for Windows, Mac, and Linux</summary>
+    <description>
+MongoChef is the best tool to work with MongoDB. Whether you’re exploring your local database or working with shards and replica sets, MongoChef is here to help and make working with MongoDB a pleasure.
+
+MongoChef is free for non-commercial use or you can freely evaluate it for commercial purposes for 14 days.
+    </description>
+    <releaseNotes>http://downloads.3t.io/mongochef/changelog.txt</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
