@@ -1,32 +1,13 @@
-$package = 'Elixir'
-$version = '1.2.4'
+﻿$packageName = 'elixir'
+$url = 'https://github.com/elixir-lang/elixir/releases/download/v1.2.5/Precompiled.zip'
+$checksum = '4bf8221e6776aec0e1fb58cbaef20327c9a1089c'
+$checksumType = 'sha1'
+$toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
-$params = @{
-  PackageName = $package;
-  FileType = 'zip';
-  Url = "https://github.com/elixir-lang/elixir/releases/download/v$version/Precompiled.zip";
-  UnzipLocation = $env:chocolateyPackageFolder;
-}
+Install-ChocolateyZipPackage -PackageName $packageName `
+                             -Url $url `
+                             -Checksum $checksum `
+                             -ChecksumType $checksumType `
+                             -UnzipLocation $toolsDir
 
-if (!(Test-Path($params.UnzipLocation)))
-{
-  New-Item $params.UnzipLocation -Type Directory | Out-Null
-}
-
-Install-ChocolateyZipPackage @params
-
-$elixirPath = "$env:ChocolateyPackageFolder/bin"
-if (![System.IO.Directory]::Exists($elixirPath)) {$elixirPath = "$env:ChocolateyPackageFolder/bin";}
- 
-Install-ChocolateyEnvironmentVariable "Path" "$($env:Path);$elixirPath" Machine
-Update-SessionEnvironment
-
-Write-Host @'
-The Elixir commands have been added to your path.
-
-Please restart your current shell session to access Elixir commands:
-elixir
-elixirc
-mix
-iex.bat
-'@
+Install-ChocolateyPath "$toolsDir\bin" 'Machine'
