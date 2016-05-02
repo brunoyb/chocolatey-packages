@@ -1,18 +1,24 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>P4Merge</id>
-    <version>2014.1</version>
-    <title>P4Merge, the Perforce Visual Merge Tool</title>
-    <authors>Perforce Software,Inc.</authors>
-    <owners>H. Alan Stevens</owners>
+    <id>p4merge</id>
+    <version>2015.2</version>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <owners>Bruno Baldochi</owners>
+    <title>P4Merge</title>
+    <authors>Perforce</authors>
+    <projectUrl>https://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/60a7fda4a170e2247d3b2bc55b78dc04f292937e/icons/p4merge.png</iconUrl>
+    <copyright>Perforce</copyright>
     <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
-    <projectUrl>http://www.perforce.com/product/components/perforce_visual_merge_and_diff_tools</projectUrl>
-    <iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/P4Merge/p4merge.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>P4Merge is an excellent, free diff and merge tool. Perforce Visual Merge and Diff Tools provide a unique perspective into the context in which change happens.
-    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
-    <summary>P4Merge is an excellent, free diff and merge tool.</summary>
-    <tags>diff merge chocolatey</tags>
+    <docsUrl>https://www.perforce.com/perforce/doc.current/manuals/p4merge/index.html</docsUrl>
+    <tags>mergetool merge difftool diff admin</tags>
+    <summary>P4Merge is an excellent, free merge and diff tool</summary>
+    <description>The Perforce Visual Merge Tool provide a unique perspective into the context in which change happens. It provides graphical three-way merging and side-by-side file comparisons.</description>
+    <releaseNotes>https://www.perforce.com/perforce/doc.current/user/p4vmergenotes.txt</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
