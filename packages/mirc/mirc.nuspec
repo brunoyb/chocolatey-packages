@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>mirc</id>
+    <version>7.34</version>
+    <title>mIRC: Internet Relay Chat client</title>
+    <authors>Khaled Mardam-Bey</authors>
+    <owners>pjmagee</owners>
+    <licenseUrl>http://www.mirc.co.uk/register.html</licenseUrl>
+    <projectUrl>http://www.mirc.com/</projectUrl>
+    <iconUrl>http://www.mirc.co.uk/images/getlogo.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>mIRC is a full featured Internet Relay Chat client for Windows that can be used to communicate, share, play or work with others on IRC networks around the world, either in multi-user group conferences or in one-to-one private discussions.
+
+      It has a clean, practical interface that is highly configurable and supports features such as buddy lists, file transfers, multi-server connections, IPv6, SSL encryption, proxy support, UTF-8 display, UPnP, customizable sounds, spoken messages, tray notifications, message logging, and more.
+
+      mIRC also has a powerful scripting language that can be used both to automate mIRC and to create applications that perform a wide range of functions from network communications to playing games.</description>
+    <summary>mIRC is a popular Internet Relay Chat client used by millions of people, and thousands of organizations, to communicate, share, play and work with each other on IRC networks around the world.</summary>
+    <releaseNotes>http://www.mirc.co.uk/whatsnew.txt</releaseNotes>
+    <copyright>mIRC Co. Ltd</copyright>
+    <tags>mirc irc instant messaging collaboration chat IM</tags>
+  </metadata>
+</package>
