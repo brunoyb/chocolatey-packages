@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongochef</id>
-    <version>3.5.1.20160501</version>
+    <version>3.5.2</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>MongoChef</title>
@@ -10,7 +10,7 @@
     <projectUrl>http://3t.io/mongochef/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/138dd9567f8b3b7414cee29d1ea2775e1a5fe10e/icons/mongochef.png</iconUrl>
     <copyright>3T Software Labs GmbH</copyright>
-    <licenseUrl>http://3t.io/mongochef/download/</licenseUrl>
+    <licenseUrl>https://downloads.3t.io/eula/EULA.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>mongochef mongodb mongo nosql database db admin</tags>
     <summary>Professional MongoDB GUI for Windows, Mac, and Linux</summary>
