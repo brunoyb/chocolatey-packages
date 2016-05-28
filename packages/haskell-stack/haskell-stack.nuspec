@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>haskell-stack</id>
-    <version>1.1.0</version>
+    <version>1.1.2</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Haskell Stack</title>
@@ -29,7 +29,7 @@ It features:
 * Testing your project.
 * Benchmarking your project.
 
-The links provided with the package are related to The Haskell Tool Slack, if you're looking for help learning Haskell itself, start with the [Documentation](https://www.haskell.org/documentation).
+The links provided with the package are related to The Haskell Tool Stack, if you're looking for help learning Haskell itself, start with the [Documentation](https://www.haskell.org/documentation).
     </description>
     <releaseNotes>http://docs.haskellstack.org/en/stable/ChangeLog/</releaseNotes>
   </metadata>
