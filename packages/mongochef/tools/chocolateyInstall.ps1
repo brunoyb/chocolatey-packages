@@ -1,9 +1,9 @@
 ﻿$packageName = 'mongochef'
-$url = 'https://cdn.3t.io/mongochef/windows/3.5.3/mongochef-x86.msi.zip'
-$checksum = '36152c0f742493afdb37ccddc37036601f5ea4e2'
+$url = 'https://cdn.3t.io/mongochef/windows/3.6.0/mongochef-x86.msi.zip'
+$checksum = 'a0ce9682b9ac983786974a0b2c720a38ee5507a0'
 $checksumType = 'sha1'
-$url64 = 'https://cdn.3t.io/mongochef/windows/3.5.3/mongochef-x64.msi.zip'
-$checksum64 = 'cc87751197a3e816144be5eaa27a2090d7130140'
+$url64 = 'https://cdn.3t.io/mongochef/windows/3.6.0/mongochef-x64.msi.zip'
+$checksum64 = '0e2ade6965558f35a0cccc5fbece9cd652e576fe'
 $checksumType64 = 'sha1'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
