@@ -1,6 +1,6 @@
 ﻿$packageName = 'elixir'
-$url = 'https://github.com/elixir-lang/elixir/releases/download/v1.2.6/Precompiled.zip'
-$checksum = 'fb1cee26875399ef38b173049d16f0028bf3add7'
+$url = 'https://github.com/elixir-lang/elixir/releases/download/v1.3.0/Precompiled.zip'
+$checksum = 'd585c58eaf8fe7454e0a0fcb5ff5c7f7fa79a198'
 $checksumType = 'sha1'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
