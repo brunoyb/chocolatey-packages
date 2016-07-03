@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mongochef</id>
-    <version>3.6.0</version>
+    <version>4.0.3</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>MongoChef</title>
@@ -19,7 +19,7 @@ MongoChef is the best tool to work with MongoDB. Whether you’re exploring your
 
 MongoChef is free for non-commercial use or you can freely evaluate it for commercial purposes for 14 days.
     </description>
-    <releaseNotes>http://downloads.3t.io/mongochef/changelog.txt</releaseNotes>
+    <releaseNotes>http://downloads.3t.io/mongochef-core/changelog.txt</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
