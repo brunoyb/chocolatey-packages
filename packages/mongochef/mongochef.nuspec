@@ -12,7 +12,7 @@
     <copyright>3T Software Labs GmbH</copyright>
     <licenseUrl>https://downloads.3t.io/eula/3t_ltd_eula.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>mongochef mongodb mongo nosql database db admin</tags>
+    <tags>mongochef mongodb mongo nosql database db trial admin</tags>
     <summary>Professional MongoDB GUI for Windows, Mac, and Linux</summary>
     <description>
 MongoChef is the best tool to work with MongoDB. Whether you’re exploring your local database or working with shards and replica sets, MongoChef is here to help and make working with MongoDB a pleasure.
