@@ -1,4 +1,4 @@
-$packageName = 'mirc'
+﻿$packageName = 'mirc'
 $fileType = 'exe'
 $silentArgs = '/S'
 
