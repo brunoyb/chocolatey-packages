@@ -1,10 +1,10 @@
 ﻿$packageName = 'mongochef'
-$url = 'https://cdn.3t.io/mongochef-core/windows/4.1.0/mongochef-x86.msi.zip'
-$checksum = 'd5c5696110b8707df02b07a779799b7b5db5b442'
-$checksumType = 'sha1'
-$url64 = 'https://cdn.3t.io/mongochef-core/windows/4.1.0/mongochef-x64.msi.zip'
-$checksum64 = 'be00e159523cc9db45a3f999d41f259910ad1049'
-$checksumType64 = 'sha1'
+$url = 'https://cdn.3t.io/mongochef-core/windows/4.1.1/mongochef-x86.msi.zip'
+$checksum = '94a6ca505892215df12d9e39148b913ea919c4815a12b1bf1f13b1e47e705485'
+$checksumType = 'sha256'
+$url64 = 'https://cdn.3t.io/mongochef-core/windows/4.1.1/mongochef-x64.msi.zip'
+$checksum64 = '9990a64912db27fe6eb7945c5e2fb220220c08d3bf98510fae212b0c77bfee51'
+$checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 Install-ChocolateyZipPackage -PackageName $packageName `
