@@ -1,7 +1,7 @@
 ﻿$packageName = 'phraseapp'
-$url = 'https://github.com/phrase/phraseapp-client/releases/download/1.1.19/phraseapp_windows_amd64.exe.zip'
-$checksum = '5c03aba6b2fcf7107e0a5711482caf403a999eba'
-$checksumType = 'sha1'
+$url = 'https://github.com/phrase/phraseapp-client/releases/download/1.2.0/phraseapp_windows_amd64.exe.zip'
+$checksum = '3c15b03377b4796d3d524ddee49adefa9deb11354e9e7f6aefff039db007c490'
+$checksumType = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 Install-ChocolateyZipPackage -PackageName $packageName `
