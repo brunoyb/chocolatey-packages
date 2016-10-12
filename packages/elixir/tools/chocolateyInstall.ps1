@@ -1,7 +1,7 @@
 ﻿$packageName = 'elixir'
-$url = 'https://github.com/elixir-lang/elixir/releases/download/v1.3.2/Precompiled.zip'
-$checksum = '57149e38c34c0d1c2b12345d76f369f17d03d38d'
-$checksumType = 'sha1'
+$url = 'https://github.com/elixir-lang/elixir/releases/download/v1.3.4/Precompiled.zip'
+$checksum = 'eac16c41b88e7293a31d6ca95b5d72eaec92349a1f16846344f7b88128587e10'
+$checksumType = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 Install-ChocolateyZipPackage -PackageName $packageName `
