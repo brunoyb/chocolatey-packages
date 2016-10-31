@@ -1,6 +1,6 @@
 ﻿$packageName = 'phraseapp'
-$url = 'https://github.com/phrase/phraseapp-client/releases/download/1.2.1/phraseapp_windows_amd64.exe.zip'
-$checksum = '26fc1e03d5e364a0faffd213b75b770c78eed99df78dde53297c2025a1681292'
+$url = 'https://github.com/phrase/phraseapp-client/releases/download/1.2.2/phraseapp_windows_amd64.exe.zip'
+$checksum = 'bf059749f4b2fbde6f6a40a6a7b55dc4bf530c4fc12506ec39e08dd0779220e0'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
