@@ -1,9 +1,9 @@
 ﻿$packageName = 'mirc'
 $fileType = 'exe'
 $silentArgs = '/S /NOBACKUP'
-$url = 'http://www.mirc.com/get.php?version=746'
-$checksum = 'd99b89649888944364ad8bd69261d8e13434a479'
-$checksumType = 'sha1'
+$url = 'https://www.mirc.com/get.php?version=747'
+$checksum = 'bb67f6a6e3ca675177dcfb6a71072feb246c6a66a05f884a0f4d789183980dc4'
+$checksumType = 'sha256'
 $validExitCodes = @(0, 1223)
 
 Install-ChocolateyPackage -PackageName $packageName `
