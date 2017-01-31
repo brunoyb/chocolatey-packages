@@ -7,6 +7,8 @@ $checksum64 = 'f311f541e15aed8354722a221f61ed90aff0b4892604c9d0bc333cd3be9b3151'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
+$packageParameters = Get-PackageParameters
+
 Install-ChocolateyZipPackage -PackageName $packageName `
                              -Url $url `
                              -Checksum $checksum `
@@ -16,4 +18,10 @@ Install-ChocolateyZipPackage -PackageName $packageName `
                              -ChecksumType64 $checksumType64 `
                              -UnzipLocation $toolsDir
 
-Install-ChocolateyPath "$(Join-Path $env:APPDATA 'local\bin')"
+if (!$packageParameters.NoLocalBinOnPath) {
+	Install-ChocolateyPath '%APPDATA%\local\bin' 'Machine'
+}
+
+if (!$packageParameters.NoStackRoot) {
+	Install-ChocolateyEnvironmentVariable 'STACK_ROOT' "$(Join-Path $env:SystemDrive 'sr')" 'Machine'
+}

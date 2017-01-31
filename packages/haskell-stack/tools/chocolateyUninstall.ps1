@@ -2,4 +2,5 @@
 
 . $toolsDir\Uninstall-ChocolateyPath.ps1
 
-Uninstall-ChocolateyPath "$(Join-Path $env:APPDATA 'local\bin')"
+Uninstall-ChocolateyPath '%APPDATA%\local\bin' 'Machine'
+Uninstall-ChocolateyEnvironmentVariable 'STACK_ROOT' 'Machine'
