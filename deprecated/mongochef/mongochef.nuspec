@@ -18,7 +18,7 @@
 
 ---
 
-`mongochef` is now deprecated because 3T decided to [change the name of MongoChef to Studio 3T](https://studio3t.com/mongochef-is-now-studio-3t/)
+`mongochef` is now deprecated because 3T decided to [change the name of MongoChef to Studio 3T](https://studio3t.com/mongochef-is-now-studio-3t/).
 
 It exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
     </description>
@@ -28,7 +28,7 @@ It exists only for backward compatibility to provide a transitional dummy packag
 
 #### Existing users - Updating
 * Updating this package will automatically install the most recent version of the **studio3t** chocolatey package.
-* Please update any links, dependencies, or scripts that reference this package to the new package name **studio3t**
+* Please update any links, dependencies, or scripts that reference this package to the new package name **studio3t**.
 
 #### Existing users - Post-update Cleanup (optional)
 `choco uninstall mongochef --whatif`
