@@ -22,6 +22,9 @@ It has a clean, practical interface that is highly configurable and supports fea
 mIRC also has a powerful scripting language that can be used both to automate mIRC and to create applications that perform a wide range of functions from network communications to playing games.
     </description>
     <releaseNotes>http://www.mirc.com/whatsnew.txt</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.0.5" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
