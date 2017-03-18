@@ -1,9 +1,9 @@
 ﻿$packageName = 'haskell-stack'
-$url = 'https://github.com/commercialhaskell/stack/releases/download/v1.3.2/stack-1.3.2-windows-i386.zip'
-$checksum = 'fcc8bd9749c42e2811ed9f954631ae38393504ff5c9d792dfa200fe6437238ee'
+$url = 'https://github.com/commercialhaskell/stack/releases/download/v1.4.0/stack-1.4.0-windows-i386.zip'
+$checksum = '91b87b17a2a7dcaff951b0d5994b75024d5d34ef72d06b50c21f985ce280c7be'
 $checksumType = 'sha256'
-$url64 = 'https://github.com/commercialhaskell/stack/releases/download/v1.3.2/stack-1.3.2-windows-x86_64.zip'
-$checksum64 = 'f311f541e15aed8354722a221f61ed90aff0b4892604c9d0bc333cd3be9b3151'
+$url64 = 'https://github.com/commercialhaskell/stack/releases/download/v1.4.0/stack-1.4.0-windows-x86_64.zip'
+$checksum64 = 'f05e7c2108a10750a5be240170202e7c3e10fee1e196068c5539f85750bc7e2b'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
@@ -18,8 +18,17 @@ Install-ChocolateyZipPackage -PackageName $packageName `
                              -ChecksumType64 $checksumType64 `
                              -UnzipLocation $toolsDir
 
+# Most of the code in the `if` below is to workaround https://github.com/chocolatey/choco/issues/1015
 if (!$packageParameters.NoLocalBinOnPath) {
-	Install-ChocolateyPath '%APPDATA%\local\bin' 'Machine'
+	$pathToInstall = '%APPDATA%\local\bin'
+
+	$actualPath = "$(Get-EnvironmentVariable -Name 'Path' -Scope 'Machine' -PreserveVariables)"
+	$actualPathArray = $actualPath.Split(';', [System.StringSplitOptions]::RemoveEmptyEntries)
+
+	if (($actualPathArray -inotcontains $pathToInstall) -and
+			($actualpathArray -inotcontains "$($pathToInstall + '\')")) {
+		Install-ChocolateyPath $pathToInstall 'Machine'
+	}
 }
 
 if (!$packageParameters.NoStackRoot) {
