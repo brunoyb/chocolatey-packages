@@ -26,11 +26,13 @@ if (!$packageParameters.NoLocalBinOnPath) {
 	$actualPathArray = $actualPath.Split(';', [System.StringSplitOptions]::RemoveEmptyEntries)
 
 	if (($actualPathArray -inotcontains $pathToInstall) -and
-			($actualpathArray -inotcontains "$($pathToInstall + '\')")) {
-		Install-ChocolateyPath $pathToInstall 'Machine'
+			($actualPathArray -inotcontains "$($pathToInstall + '\')")) {
+		Install-ChocolateyPath -PathToInstall $pathToInstall -PathType 'Machine'
 	}
 }
 
 if (!$packageParameters.NoStackRoot) {
-	Install-ChocolateyEnvironmentVariable 'STACK_ROOT' "$(Join-Path $env:SystemDrive 'sr')" 'Machine'
+	Install-ChocolateyEnvironmentVariable -VariableName 'STACK_ROOT' `
+	                                      -VariableValue "$(Join-Path $env:SystemDrive 'sr')" `
+	                                      -VariableType 'Machine'
 }
