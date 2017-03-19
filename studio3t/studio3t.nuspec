@@ -10,7 +10,7 @@
     <title>Studio 3T</title>
     <authors>3T</authors>
     <projectUrl>https://studio3t.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/master/studio3t/icon.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/studio3t/icon.png</iconUrl>
     <copyright>3T Software Labs GmbH</copyright>
     <licenseUrl>http://files.studio3t.com/eula/eula.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

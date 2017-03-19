@@ -10,7 +10,7 @@
     <title>mIRC</title>
     <authors>Khaled Mardam-Bey</authors>
     <projectUrl>http://www.mirc.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/master/mirc/icon.gif</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/mirc/icon.gif</iconUrl>
     <copyright>mIRC Co. Ltd.</copyright>
     <licenseUrl>http://www.mirc.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

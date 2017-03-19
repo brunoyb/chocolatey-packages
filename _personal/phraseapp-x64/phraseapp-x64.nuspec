@@ -10,7 +10,7 @@
     <title>PhraseApp (x64)</title>
     <authors>PhraseApp</authors>
     <projectUrl>https://phraseapp.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/master/_personal/phraseapp-x64/icon.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/_personal/phraseapp-x64/icon.png</iconUrl>
     <copyright>PhraseApp</copyright>
     <licenseUrl>https://github.com/phrase/phraseapp-client/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
