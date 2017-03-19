@@ -1,1 +1,6 @@
 *.nupkg
+/api_key
+/Update-AUPackages.md
+/Update-History.md
+/update_info.xml
+/update_vars.ps1

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>studio3t</id>
+    <version>5.1.0</version>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <owners>Bruno Baldochi</owners>
+    <title>Studio 3T</title>
+    <authors>3T</authors>
+    <projectUrl>https://studio3t.com/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/master/studio3t/icon.png</iconUrl>
+    <copyright>3T Software Labs GmbH</copyright>
+    <licenseUrl>http://files.studio3t.com/eula/eula.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>studio3t mongochef mongodb mongo nosql database db admin trial</tags>
+    <summary>The IDE for MongoDB</summary>
+    <description>
+Formerly known as MongoChef, Studio 3T helps thousands of MongoDB developers and administrators with their everyday jobs by providing the finest MongoDB tools on the market.
+
+Studio 3T is free for non-commercial use or you can freely evaluate it for commercial purposes for 14 days.
+    </description>
+    <releaseNotes>http://files.studio3t.com/changelog/changelog.txt</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
