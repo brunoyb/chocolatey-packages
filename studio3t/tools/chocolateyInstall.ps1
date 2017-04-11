@@ -1,9 +1,9 @@
 ﻿$packageName = 'studio3t'
-$url32 = 'https://download.studio3t.com/studio-3t/windows/5.1.1/studio-3t-x86.msi.zip'
-$checksum32 = '1ba91f3200ce72d47bbef5b4d238761c0d92623e1b8598609e8e27b84dece666'
+$url32 = 'https://download.studio3t.com/studio-3t/windows/5.2.0/studio-3t-x86.msi.zip'
+$checksum32 = 'c4d833da1547d6911394d929911876ef8cb75b91f6b72c4632bf0aff4c295180'
 $checksumType32 = 'sha256'
-$url64 = 'https://download.studio3t.com/studio-3t/windows/5.1.1/studio-3t-x64.msi.zip'
-$checksum64 = '546a0427bd06fd6c8b8b4dbec4151492629047fd668bb6a5bd06c9a8cb88745a'
+$url64 = 'https://download.studio3t.com/studio-3t/windows/5.2.0/studio-3t-x64.msi.zip'
+$checksum64 = 'd6aa18a5ebbe88625dd7bad4a344647560e5dc5a782818a7e448a819e99e37a2'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
