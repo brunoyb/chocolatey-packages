@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>ag</id>
+    <version>1.0.2</version>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <owners>Bruno Baldochi</owners>
+    <title>The Silver Searcher</title>
+    <authors>Geoff Greer</authors>
+    <projectUrl>https://github.com/JFLarvoire/the_silver_searcher</projectUrl>
+    <copyright>The Silver Searcher</copyright>
+    <licenseUrl>https://github.com/JFLarvoire/the_silver_searcher/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/JFLarvoire/the_silver_searcher</projectSourceUrl>
+    <docsUrl>https://github.com/JFLarvoire/the_silver_searcher/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/JFLarvoire/the_silver_searcher/issues</bugTrackerUrl>
+    <tags>ag ack grep search</tags>
+    <summary>A code searching tool similar to ack, with a focus on speed</summary>
+    <description>
+A code searching tool similar to `ack`, with a focus on speed.
+
+## Features
+
+* It is an order of magnitude faster than `ack`.
+* It ignores file patterns from your `.gitignore` and `.hgignore`.
+* If there are files in your source repo you don't want to search, just add their patterns to a `.ignore` file. (\*cough\* `*.min.js` \*cough\*)
+* The command name is 33% shorter than `ack`, and all keys are on the home row!
+    </description>
+    <releaseNotes>https://github.com/JFLarvoire/the_silver_searcher/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
