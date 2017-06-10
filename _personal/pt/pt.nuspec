@@ -17,9 +17,9 @@
     <docsUrl>https://github.com/monochromegane/the_platinum_searcher/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/monochromegane/the_platinum_searcher/issues</bugTrackerUrl>
     <tags>pt ag ack grep search</tags>
-    <summary>A code search tool similar to ack and The Silver Searcher</summary>
+    <summary>A code searching tool similar to ack and The Silver Searcher</summary>
     <description>
-A code search tool similar to `ack` and The Silver Searcher (`ag`). It supports multi platforms and multi encodings.
+A code searching tool similar to `ack` and The Silver Searcher (`ag`). It supports multi platforms and multi encodings.
 
 ## Features
 
