@@ -1,20 +1,23 @@
-Import-Module AU
+﻿Import-Module AU
 
-$releases = 'http://files.studio3t.com/changelog/changelog.txt'
+$changelog = 'http://files.studio3t.com/changelog/changelog.txt'
 
 function global:au_SearchReplace {
 	@{
-		'tools\chocolateyInstall.ps1' = @{
-			"(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-			"(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-			"(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+		".\tools\chocolateyInstall.ps1" = @{
+			"(?i)(^\s*[$]packageName\s*=\s*)('.*')"    = "`$1'$($Latest.PackageName)'"
+			"(?i)(^\s*[$]url32\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
+			"(?i)(^\s*[$]checksum32\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
+			"(?i)(^\s*[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+			"(?i)(^\s*[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
+			"(?i)(^\s*[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+			"(?i)(^\s*[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
 		}
 	}
 }
 
 function global:au_GetLatest {
-	$downloadPage = Invoke-WebRequest -Uri $releases
+	$downloadPage = Invoke-WebRequest -Uri $changelog
 
 	$re = '(.+) \(\d{2}-\w+-\d{4}\)'
 	if ($downloadPage.Content -Match $re) {

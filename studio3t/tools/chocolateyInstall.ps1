@@ -1,4 +1,6 @@
-﻿$packageName = 'studio3t'
+﻿$ErrorActionPreference = 'Stop'
+
+$packageName = 'studio3t'
 $url32 = 'https://download.studio3t.com/studio-3t/windows/5.3.3/studio-3t-x86.msi.zip'
 $checksum32 = '4ecdb01d4de5e3d972959341f5e735a60a3a95c9525532873356682bd6e07c7c'
 $checksumType32 = 'sha256'
@@ -18,7 +20,7 @@ Install-ChocolateyZipPackage -PackageName $packageName `
 
 $fileType = 'msi'
 $silentArgs = '/quiet'
-$file = Get-ChildItem $toolsDir -Include *.msi -Recurse | Select -First 1
+$file = Get-ChildItem $toolsDir -Include *.msi -Recurse | Select-Object -First 1
 
 Install-ChocolateyInstallPackage -PackageName $packageName `
                                  -FileType $fileType `

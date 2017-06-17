@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>studio3t</id>
     <version>5.3.3</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
@@ -11,7 +11,7 @@
     <authors>3T</authors>
     <projectUrl>https://studio3t.com/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/studio3t/icon.png</iconUrl>
-    <copyright>3T Software Labs GmbH</copyright>
+    <copyright>3T Software Labs</copyright>
     <licenseUrl>http://files.studio3t.com/eula/eula.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>studio3t mongochef mongodb mongo nosql database db admin trial</tags>
