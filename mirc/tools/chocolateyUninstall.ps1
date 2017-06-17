@@ -1,4 +1,6 @@
-﻿$packageName = 'mirc'
+﻿$ErrorActionPreference = 'Stop'
+
+$packageName = 'mirc'
 $fileType = 'exe'
 $silentArgs = '/S'
 $validExitCodes = @(0, 1223)

@@ -1,4 +1,6 @@
-﻿$packageName = 'mirc'
+﻿$ErrorActionPreference = 'Stop'
+
+$packageName = 'mirc'
 $fileType = 'exe'
 $silentArgs = '/S /NOBACKUP'
 $url = 'https://www.mirc.com/get.php?version=749'
