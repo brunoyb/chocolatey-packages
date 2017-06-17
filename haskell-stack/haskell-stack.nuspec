@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>haskell-stack</id>
     <version>1.4.0</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
@@ -43,7 +43,7 @@ The following package parameters can be set:
 These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoLocalBinOnPath /NoStackRoot"'`.
     </description>
-    <releaseNotes>http://docs.haskellstack.org/en/stable/ChangeLog/</releaseNotes>
+    <releaseNotes>http://docs.haskellstack.org/en/stable/ChangeLog/#140</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.0.4" />
     </dependencies>

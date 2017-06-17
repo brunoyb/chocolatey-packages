@@ -1,4 +1,6 @@
-﻿$toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
+﻿$ErrorActionPreference = 'Stop'
+
+$toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 . $toolsDir\Uninstall-ChocolateyPath.ps1
 

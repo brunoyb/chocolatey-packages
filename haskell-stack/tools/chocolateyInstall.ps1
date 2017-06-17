@@ -1,4 +1,6 @@
-﻿$packageName = 'haskell-stack'
+﻿$ErrorActionPreference = 'Stop'
+
+$packageName = 'haskell-stack'
 $url32 = 'https://github.com/commercialhaskell/stack/releases/download/v1.4.0/stack-1.4.0-windows-i386.zip'
 $checksum32 = '91b87b17a2a7dcaff951b0d5994b75024d5d34ef72d06b50c21f985ce280c7be'
 $checksumType32 = 'sha256'
