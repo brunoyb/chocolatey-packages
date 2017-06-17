@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>robo3t</id>
+    <version>1.1.1</version>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <owners>Bruno Baldochi</owners>
+    <title>Robo 3T</title>
+    <authors>3T</authors>
+    <projectUrl>https://robomongo.org/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/d99e5a1f01b3612b5c66bef661af0fb19bb2bd0d/robo3t/icon.png</iconUrl>
+    <copyright>3T Software Labs</copyright>
+    <licenseUrl>https://github.com/Studio3T/robomongo/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Studio3T/robomongo</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Studio3T/robomongo/issues</bugTrackerUrl>
+    <tags>robo3t robomongo mongodb mongo nosql database db admin</tags>
+    <summary>MongoDB management tool</summary>
+    <description>Robo 3T is a shell-centric cross-platform MongoDB management tool. Unlike most other MongoDB admin UI tools, Robo 3T embeds the actual `mongo` shell in a tabbed interface with access to a shell command line as well as GUI interaction.</description>
+    <releaseNotes>https://github.com/Studio3T/robomongo/blob/master/CHANGELOG</releaseNotes>
+    <dependencies>
+      <dependency id="robo3t.install" version="1.1.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
