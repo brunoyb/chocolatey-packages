@@ -1,4 +1,6 @@
-﻿$packageName = 'ag'
+﻿$ErrorActionPreference = 'Stop'
+
+$packageName = 'ag'
 $url = 'https://github.com/JFLarvoire/the_silver_searcher/releases/download/1.0.2-Windows/ag.zip'
 $checksum = 'ee336ba4afdaf3a4b3c350783dcf30a1f53cd1d192428082df11bf7ee3e168c6'
 $checksumType = 'sha256'
