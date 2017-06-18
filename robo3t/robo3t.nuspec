@@ -16,7 +16,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Studio3T/robomongo</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Studio3T/robomongo/issues</bugTrackerUrl>
-    <tags>robo3t robomongo mongodb mongo nosql database db admin</tags>
+    <tags>robo3t robomongo mongodb mongo nosql database db</tags>
     <summary>MongoDB management tool</summary>
     <description>Formerly known as Robomongo (more info on https://robomongo.org/), Robo 3T is a shell-centric cross-platform MongoDB management tool. Unlike most other MongoDB admin UI tools, Robo 3T embeds the actual `mongo` shell in a tabbed interface with access to a shell command line as well as GUI interaction.</description>
     <releaseNotes>https://github.com/Studio3T/robomongo/blob/master/CHANGELOG</releaseNotes>
