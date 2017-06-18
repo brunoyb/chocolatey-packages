@@ -1,4 +1,6 @@
-﻿$packageName = 'pt'
+﻿$ErrorActionPreference = 'Stop'
+
+$packageName = 'pt'
 $url32 = 'https://github.com/monochromegane/the_platinum_searcher/releases/download/v2.1.5/pt_windows_386.zip'
 $checksum32 = '5756ebf64d3d65aa4ef7bb176f5170ea8abfd5e23bf349d7c64a408b2201732b'
 $checksumType32 = 'sha256'

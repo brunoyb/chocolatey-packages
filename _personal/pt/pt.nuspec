@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>pt</id>
     <version>2.1.5</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
@@ -29,7 +29,7 @@ A code searching tool similar to `ack` and The Silver Searcher (`ag`). It suppor
 * It searches `UTF-8`, `EUC-JP` and `Shift_JIS` files.
 * It provides binaries for multi platforms (macOS, Windows, Linux).
     </description>
-    <releaseNotes>https://github.com/monochromegane/the_platinum_searcher/releases</releaseNotes>
+    <releaseNotes>https://github.com/monochromegane/the_platinum_searcher/releases/tag/v2.1.5</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
