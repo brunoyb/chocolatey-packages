@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>phraseapp-x64</id>
+    <id>phraseapp</id>
     <version>1.4.5</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
-    <title>PhraseApp (x64)</title>
+    <title>PhraseApp</title>
     <authors>PhraseApp</authors>
     <projectUrl>https://phraseapp.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/_personal/phraseapp-x64/icon.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/bcda49ee0c328a49265250445b6cff46620517c4/_personal/phraseapp/icon.png</iconUrl>
     <copyright>PhraseApp</copyright>
     <licenseUrl>https://github.com/phrase/phraseapp-client/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,7 +20,7 @@
     <tags>phraseapp cli</tags>
     <summary>The PhraseApp API in your terminal</summary>
     <description>The PhraseApp Client lets you access all API endpoints as well as easily sync your locale files between your source code and PhraseApp.</description>
-    <releaseNotes>https://github.com/phrase/phraseapp-client/releases</releaseNotes>
+    <releaseNotes>https://github.com/phrase/phraseapp-client/releases/tag/1.4.5</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
