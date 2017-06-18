@@ -10,7 +10,7 @@
     <title>[Deprecated] MongoChef</title>
     <authors>3T</authors>
     <projectUrl>http://3t.io/mongochef/</projectUrl>
-    <copyright>3T Software Labs GmbH</copyright>
+    <copyright>3T Software Labs</copyright>
     <licenseUrl>https://downloads.3t.io/eula/3t_ltd_eula.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>mongochef mongodb mongo nosql database db admin trial</tags>
