@@ -21,15 +21,15 @@ function global:au_GetLatest {
 	$downloadPage = Invoke-WebRequest -Uri $releases
 
 	$re = 'phraseapp_windows_amd64\.exe\.zip$'
-	$url = $downloadPage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
+	$url64 = $downloadPage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
 
-	$version = $url -Split '/' | Select-Object -Last 1 -Skip 1
-	$url = 'https://github.com' + $url
+	$version = $url64 -Split '/' | Select-Object -Last 1 -Skip 1
+	$url64 = 'https://github.com' + $url64
 	$releaseNotes = "https://github.com/phrase/phraseapp-client/releases/tag/${version}"
 
 	@{
 		Version = $version
-		URL64 = $url
+		URL64 = $url64
 		ReleaseNotes = $releaseNotes
 	}
 }
