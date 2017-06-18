@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>elixir</id>
     <version>1.4.4</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
@@ -27,9 +27,9 @@ Elixir also provides first-class support for pattern matching, polymorphism via 
 
 Finally, Elixir and Erlang share the same bytecode and data types. This means you can invoke Erlang code from Elixir (and vice-versa) without any conversion or performance hit. This allows a developer to mix the expressiveness of Elixir with the robustness and performance of Erlang.
     </description>
-    <releaseNotes>https://github.com/elixir-lang/elixir/releases</releaseNotes>
+    <releaseNotes>https://github.com/elixir-lang/elixir/releases/tag/v1.4.4</releaseNotes>
     <dependencies>
-      <dependency id="erlang" version="18.0.20150709.2" />
+      <dependency id="erlang" version="18.1" />
     </dependencies>
   </metadata>
   <files>
