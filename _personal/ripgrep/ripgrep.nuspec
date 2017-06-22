@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ripgrep</id>
+    <version>0.5.2</version>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <owners>Bruno Baldochi</owners>
+    <title>ripgrep (rg)</title>
+    <authors>Andrew Gallant</authors>
+    <projectUrl>https://github.com/BurntSushi/ripgrep</projectUrl>
+    <copyright>Andrew Gallant</copyright>
+    <licenseUrl>https://github.com/BurntSushi/ripgrep/blob/master/LICENSE-MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/BurntSushi/ripgrep</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/BurntSushi/ripgrep/issues</bugTrackerUrl>
+    <tags>ripgrep rg ag pt ack grep search</tags>
+    <summary>A line oriented search tool that combines the usability of The Silver Searcher with the raw speed of grep</summary>
+    <description>`ripgrep` is a line oriented search tool that combines the usability of The Silver Searcher (similar to `ack`) with the raw speed of GNU grep. `ripgrep` works by recursively searching your current directory for a regex pattern. `ripgrep` has first class support on Windows, Mac and Linux.</description>
+    <releaseNotes>https://github.com/BurntSushi/ripgrep/releases/tag/0.5.2</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist2015" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
