@@ -20,19 +20,10 @@ Install-ChocolateyZipPackage -PackageName $packageName `
                              -ChecksumType64 $checksumType64 `
                              -UnzipLocation $toolsDir
 
-# Most of the code in the `if` below is to workaround https://github.com/chocolatey/choco/issues/1015
 if ($packageParameters.NoLocalBinOnPath -NE $true) {
-	$pathToInstall = '%APPDATA%\local\bin'
-
-	$actualPath = "$(Get-EnvironmentVariable -Name 'Path' -Scope 'Machine' -PreserveVariables)"
-	$actualPathArray = $actualPath.Split(';', [System.StringSplitOptions]::RemoveEmptyEntries)
-
-	if (($actualPathArray -INotContains $pathToInstall) -And
-			($actualPathArray -INotContains "$($pathToInstall + '\')")) {
-		Install-ChocolateyPath $pathToInstall 'Machine'
-	}
+	Install-ChocolateyPath "$(Join-Path $env:APPDATA 'local\bin')" 'User'
 }
 
 if ($packageParameters.NoStackRoot -NE $true) {
-	Install-ChocolateyEnvironmentVariable 'STACK_ROOT' "$(Join-Path $env:SystemDrive 'sr')" 'Machine'
+	Install-ChocolateyEnvironmentVariable 'STACK_ROOT' "$(Join-Path $env:SystemDrive 'sr')" 'User'
 }

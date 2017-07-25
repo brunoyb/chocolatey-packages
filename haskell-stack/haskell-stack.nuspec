@@ -18,7 +18,7 @@
     <docsUrl>http://docs.haskellstack.org/en/stable/README/</docsUrl>
     <mailingListUrl>https://groups.google.com/d/forum/haskell-stack</mailingListUrl>
     <bugTrackerUrl>https://github.com/commercialhaskell/stack/issues</bugTrackerUrl>
-    <tags>haskell-stack haskell stack programming language ghc cabal admin</tags>
+    <tags>haskell-stack haskell stack programming language ghc cabal</tags>
     <summary>Stack is a cross-platform program for developing Haskell projects</summary>
     <description>
 Stack is a cross-platform build tool for Haskell that handles management of the toolchain (including the GHC compiler and MSYS2 on Windows), building and registering libraries, and more.
