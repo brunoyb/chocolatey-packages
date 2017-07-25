@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$releases = 'https://github.com/commercialhaskell/stack/releases'
+$releases = 'https://github.com/commercialhaskell/stack/releases/latest'
 
 function global:au_SearchReplace {
 	@{
