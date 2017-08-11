@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$releases = 'https://github.com/elixir-lang/elixir/releases'
+$releases = 'https://github.com/elixir-lang/elixir/releases/latest'
 
 function global:au_SearchReplace {
 	@{
