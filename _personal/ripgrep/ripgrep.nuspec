@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ripgrep</id>
-    <version>0.5.2</version>
+    <version>0.6.0</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>ripgrep (rg)</title>
@@ -18,7 +18,7 @@
     <tags>ripgrep rg ag pt ack grep search</tags>
     <summary>A line oriented search tool that combines the usability of The Silver Searcher with the raw speed of grep</summary>
     <description>`ripgrep` is a line oriented search tool that combines the usability of The Silver Searcher (similar to `ack`) with the raw speed of GNU grep. `ripgrep` works by recursively searching your current directory for a regex pattern. `ripgrep` has first class support on Windows, Mac and Linux.</description>
-    <releaseNotes>https://github.com/BurntSushi/ripgrep/releases/tag/0.5.2</releaseNotes>
+    <releaseNotes>https://github.com/BurntSushi/ripgrep/releases/tag/0.6.0</releaseNotes>
     <dependencies>
       <dependency id="vcredist2015" />
     </dependencies>
