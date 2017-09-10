@@ -14,10 +14,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$downloadPage = Invoke-WebRequest -Uri $whatsnew
+	$whatsnewPage = Invoke-WebRequest -Uri $whatsnew
 
 	$re = '\d{2}/\d{2}/\d{4} - mIRC v(.+)'
-	if ($downloadPage.Content -Match $re) {
+	if ($whatsnewPage.Content -Match $re) {
 		$version = $Matches[1].Trim()
 		$url = 'https://www.mirc.com/get.php?version=' + $version.Replace('.', '')
 	} else {
