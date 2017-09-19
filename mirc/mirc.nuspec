@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mirc</id>
-    <version>7.49</version>
+    <version>7.51</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>mIRC</title>
