@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sbt</id>
+    <version>1.0.3</version>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <owners>Bruno Baldochi</owners>
+    <title>sbt</title>
+    <authors>Lightbend, Inc.</authors>
+    <projectUrl>https://www.scala-sbt.org/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/ab87c8540007ed240d940ef34da45b55653f667b/_personal/sbt/icon.svg</iconUrl>
+    <copyright>Lightbend, Inc.</copyright>
+    <licenseUrl>https://github.com/sbt/sbt/blob/1.x/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/sbt/sbt</projectSourceUrl>
+    <docsUrl>https://www.scala-sbt.org/1.x/docs/index.html</docsUrl>
+    <mailingListUrl>https://groups.google.com/d/forum/sbt-dev</mailingListUrl>
+    <bugTrackerUrl>https://github.com/sbt/sbt/issues</bugTrackerUrl>
+    <tags>sbt scala java functional programming language admin</tags>
+    <summary>The interactive build tool</summary>
+    <description>sbt is a build tool for Scala, Java, and more. It requires Java 1.8 or later.</description>
+    <releaseNotes>https://github.com/sbt/sbt/releases/tag/v1.0.3</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
