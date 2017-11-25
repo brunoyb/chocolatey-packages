@@ -18,7 +18,7 @@
     <bugTrackerUrl>https://github.com/monochromegane/the_platinum_searcher/issues</bugTrackerUrl>
     <tags>pt ag ack grep search</tags>
     <summary>A code searching tool similar to ack and The Silver Searcher</summary>
-    <description>
+    <description><![CDATA[
 A code searching tool similar to `ack` and The Silver Searcher (`ag`). It supports multi platforms and multi encodings.
 
 ## Features
@@ -28,7 +28,7 @@ A code searching tool similar to `ack` and The Silver Searcher (`ag`). It suppor
 * It ignores file patterns from your `.gitignore`.
 * It searches `UTF-8`, `EUC-JP` and `Shift_JIS` files.
 * It provides binaries for multi platforms (macOS, Windows, Linux).
-    </description>
+]]></description>
     <releaseNotes>https://github.com/monochromegane/the_platinum_searcher/releases/tag/v2.1.5</releaseNotes>
   </metadata>
   <files>
