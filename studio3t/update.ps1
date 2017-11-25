@@ -1,5 +1,7 @@
 ﻿Import-Module AU
 
+. $PSScriptRoot\..\_scripts\all.ps1
+
 $changelog = 'http://files.studio3t.com/changelog/changelog.txt'
 
 function global:au_SearchReplace {
@@ -14,6 +16,10 @@ function global:au_SearchReplace {
 			"(?i)(^\s*[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
 		}
 	}
+}
+
+function global:au_AfterUpdate {
+	Set-DescriptionFromReadme -SkipFirst 2
 }
 
 function global:au_GetLatest {
