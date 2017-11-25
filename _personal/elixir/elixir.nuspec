@@ -5,7 +5,7 @@
   <metadata>
     <id>elixir</id>
     <version>1.5.2</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/elixir</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Elixir</title>
     <authors>José Valim</authors>

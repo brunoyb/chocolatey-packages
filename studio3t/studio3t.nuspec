@@ -5,7 +5,7 @@
   <metadata>
     <id>studio3t</id>
     <version>5.6.4</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/studio3t</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Studio 3T</title>
     <authors>3T</authors>

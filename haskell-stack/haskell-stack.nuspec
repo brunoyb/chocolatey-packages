@@ -5,7 +5,7 @@
   <metadata>
     <id>haskell-stack</id>
     <version>1.5.1</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/haskell-stack</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Haskell Stack</title>
     <authors>Stack contributors</authors>

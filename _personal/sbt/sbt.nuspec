@@ -5,7 +5,7 @@
   <metadata>
     <id>sbt</id>
     <version>1.0.3</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/sbt</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>sbt</title>
     <authors>Lightbend, Inc.</authors>

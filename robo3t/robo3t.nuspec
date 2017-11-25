@@ -5,7 +5,7 @@
   <metadata>
     <id>robo3t</id>
     <version>1.1.1</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/robo3t</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Robo 3T</title>
     <authors>3T</authors>

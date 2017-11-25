@@ -5,7 +5,7 @@
   <metadata>
     <id>ag</id>
     <version>2.1.0.5</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/ag</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>The Silver Searcher</title>
     <authors>Geoff Greer</authors>

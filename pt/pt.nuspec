@@ -5,7 +5,7 @@
   <metadata>
     <id>pt</id>
     <version>2.1.5</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/pt</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>The Platinum Searcher</title>
     <authors>monochromegane</authors>

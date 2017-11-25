@@ -5,7 +5,7 @@
   <metadata>
     <id>ripgrep</id>
     <version>0.7.1</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/ripgrep</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>ripgrep (rg)</title>
     <authors>Andrew Gallant</authors>
