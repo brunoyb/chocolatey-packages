@@ -10,7 +10,7 @@
     <title>Elixir</title>
     <authors>José Valim</authors>
     <projectUrl>http://elixir-lang.org/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/_personal/elixir/icon.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/_personal/elixir/icon.png</iconUrl>
     <copyright>Plataformatec</copyright>
     <licenseUrl>https://github.com/elixir-lang/elixir/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,13 +20,13 @@
     <bugTrackerUrl>https://github.com/elixir-lang/elixir/issues</bugTrackerUrl>
     <tags>elixir erlang ruby concurrent functional programming language admin</tags>
     <summary>Elixir is a functional meta-programming aware language built on top of the Erlang VM</summary>
-    <description>
+    <description><![CDATA[
 Elixir is a functional meta-programming aware language built on top of the Erlang VM. It is a dynamic language with flexible syntax with macros support that leverages Erlang's abilities to build concurrent, distributed, fault-tolerant applications with hot code upgrades.
 
 Elixir also provides first-class support for pattern matching, polymorphism via protocols (similar to Clojure's), aliases and associative data structures (usually known as dicts or hashes in other programming languages).
 
 Finally, Elixir and Erlang share the same bytecode and data types. This means you can invoke Erlang code from Elixir (and vice-versa) without any conversion or performance hit. This allows a developer to mix the expressiveness of Elixir with the robustness and performance of Erlang.
-    </description>
+]]></description>
     <releaseNotes>https://github.com/elixir-lang/elixir/releases/tag/v1.5.2</releaseNotes>
     <dependencies>
       <dependency id="erlang" version="18.1" />
