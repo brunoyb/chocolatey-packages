@@ -10,7 +10,7 @@
     <title>PhraseApp</title>
     <authors>PhraseApp</authors>
     <projectUrl>https://phraseapp.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/c877faffe8a90375fff3de26f7268c8bc0d1b0e2/phraseapp/icon.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/c877faffe8a90375fff3de26f7268c8bc0d1b0e2/phraseapp/icon.png</iconUrl>
     <copyright>PhraseApp</copyright>
     <licenseUrl>https://github.com/phrase/phraseapp-client/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -19,7 +19,9 @@
     <bugTrackerUrl>https://github.com/phrase/phraseapp-client/issues</bugTrackerUrl>
     <tags>phraseapp cli</tags>
     <summary>The PhraseApp API in your terminal</summary>
-    <description>The PhraseApp Client lets you access all API endpoints as well as easily sync your locale files between your source code and PhraseApp.</description>
+    <description><![CDATA[
+The PhraseApp Client lets you access all API endpoints as well as easily sync your locale files between your source code and PhraseApp.
+]]></description>
     <releaseNotes>https://github.com/phrase/phraseapp-client/releases/tag/1.6.0</releaseNotes>
   </metadata>
   <files>
