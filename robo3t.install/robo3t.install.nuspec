@@ -10,7 +10,7 @@
     <title>Robo 3T (Install)</title>
     <authors>3T</authors>
     <projectUrl>https://robomongo.org/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/5f41c069b997d7c05d0124ab2601b0bb0210da03/robo3t.install/icon.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/5f41c069b997d7c05d0124ab2601b0bb0210da03/robo3t.install/icon.png</iconUrl>
     <copyright>3T Software Labs</copyright>
     <licenseUrl>https://github.com/Studio3T/robomongo/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -18,7 +18,9 @@
     <bugTrackerUrl>https://github.com/Studio3T/robomongo/issues</bugTrackerUrl>
     <tags>robo3t robomongo mongodb mongo nosql database db admin</tags>
     <summary>MongoDB management tool</summary>
-    <description>Formerly known as Robomongo (more info on https://robomongo.org/), Robo 3T is a shell-centric cross-platform MongoDB management tool. Unlike most other MongoDB admin UI tools, Robo 3T embeds the actual `mongo` shell in a tabbed interface with access to a shell command line as well as GUI interaction.</description>
+    <description><![CDATA[
+Formerly known as Robomongo (more info on https://robomongo.org/), Robo 3T is a shell-centric cross-platform MongoDB management tool. Unlike most other MongoDB admin UI tools, Robo 3T embeds the actual `mongo` shell in a tabbed interface with access to a shell command line as well as GUI interaction.
+]]></description>
     <releaseNotes>https://github.com/Studio3T/robomongo/blob/master/CHANGELOG</releaseNotes>
   </metadata>
   <files>
