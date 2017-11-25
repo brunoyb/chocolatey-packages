@@ -2,7 +2,7 @@
 
 . $PSScriptRoot\..\_scripts\all.ps1
 
-$whatsnew = 'http://www.mirc.com/whatsnew.txt'
+$updateUrl = 'http://www.mirc.com/whatsnew.txt'
 
 function global:au_SearchReplace {
 	@{
@@ -20,10 +20,10 @@ function global:au_AfterUpdate {
 }
 
 function global:au_GetLatest {
-	$whatsnewPage = Invoke-WebRequest -Uri $whatsnew
+	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = '\d{2}/\d{2}/\d{4} - mIRC v(.+)'
-	if ($whatsnewPage.Content -Match $re) {
+	if ($updatePage.Content -Match $re) {
 		$version = $Matches[1].Trim()
 		$url = 'https://www.mirc.com/get.php?version=' + $version.Replace('.', '')
 	} else {

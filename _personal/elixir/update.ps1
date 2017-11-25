@@ -2,7 +2,7 @@
 
 . $PSScriptRoot\..\..\_scripts\all.ps1
 
-$releases = 'https://github.com/elixir-lang/elixir/releases/latest'
+$updateUrl = 'https://github.com/elixir-lang/elixir/releases/latest'
 
 function global:au_SearchReplace {
 	@{
@@ -24,10 +24,10 @@ function global:au_AfterUpdate {
 }
 
 function global:au_GetLatest {
-	$downloadPage = Invoke-WebRequest -Uri $releases
+	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = 'Precompiled\.zip$'
-	$url = $downloadPage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
+	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
 
 	$version = $url -Split '/|v' | Select-Object -Last 1 -Skip 1
 	$url = 'https://github.com' + $url

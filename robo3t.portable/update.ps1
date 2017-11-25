@@ -2,7 +2,7 @@
 
 . $PSScriptRoot\..\_scripts\all.ps1
 
-$download = 'https://robomongo.org/download'
+$updateUrl = 'https://robomongo.org/download'
 
 function global:au_SearchReplace {
 	@{
@@ -20,10 +20,10 @@ function global:au_AfterUpdate {
 }
 
 function global:au_GetLatest {
-	$downloadPage = Invoke-WebRequest -Uri $download
+	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = 'robo3t-.+-windows-x86_64-.+\.zip$'
-	$url64 = $downloadPage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
+	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
 
 	$version = $url64 -Split '-' | Select-Object -First 1 -Skip 1
 

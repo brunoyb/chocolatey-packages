@@ -2,7 +2,7 @@
 
 . $PSScriptRoot\..\_scripts\all.ps1
 
-$releases = 'https://github.com/phrase/phraseapp-client/releases'
+$updateUrl = 'https://github.com/phrase/phraseapp-client/releases'
 
 function global:au_SearchReplace {
 	@{
@@ -24,10 +24,10 @@ function global:au_AfterUpdate {
 }
 
 function global:au_GetLatest {
-	$downloadPage = Invoke-WebRequest -Uri $releases
+	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = 'phraseapp_windows_amd64\.exe\.zip$'
-	$url64 = $downloadPage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
+	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
 
 	$version = $url64 -Split '/' | Select-Object -Last 1 -Skip 1
 	$url64 = 'https://github.com' + $url64

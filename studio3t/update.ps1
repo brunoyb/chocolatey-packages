@@ -2,7 +2,7 @@
 
 . $PSScriptRoot\..\_scripts\all.ps1
 
-$changelog = 'http://files.studio3t.com/changelog/changelog.txt'
+$updateUrl = 'http://files.studio3t.com/changelog/changelog.txt'
 
 function global:au_SearchReplace {
 	@{
@@ -23,10 +23,10 @@ function global:au_AfterUpdate {
 }
 
 function global:au_GetLatest {
-	$downloadPage = Invoke-WebRequest -Uri $changelog
+	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = '(.+) \(\d{2}-\w+-\d{4}\)'
-	if ($downloadPage.Content -Match $re) {
+	if ($updatePage.Content -Match $re) {
 		$version = $Matches[1]
 		$url32 = "https://download.studio3t.com/studio-3t/windows/$version/studio-3t-x86.msi.zip"
 		$url64 = "https://download.studio3t.com/studio-3t/windows/$version/studio-3t-x64.msi.zip"

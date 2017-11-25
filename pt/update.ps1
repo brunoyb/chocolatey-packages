@@ -2,7 +2,7 @@
 
 . $PSScriptRoot\..\_scripts\all.ps1
 
-$releases = 'https://github.com/monochromegane/the_platinum_searcher/releases'
+$updateUrl = 'https://github.com/monochromegane/the_platinum_searcher/releases'
 
 function global:au_SearchReplace {
 	@{
@@ -27,10 +27,10 @@ function global:au_AfterUpdate {
 }
 
 function global:au_GetLatest {
-	$downloadPage = Invoke-WebRequest -Uri $releases
+	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = 'pt_windows_(386|amd64)\.zip$'
-	$url = $downloadPage.Links | Where-Object href -Match $re | Select-Object -First 2 -Expand href
+	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 2 -Expand href
 
 	$version = $url[0] -Split '/|v' | Select-Object -Last 1 -Skip 1
 	$url32 = 'https://github.com' + $url[0]
