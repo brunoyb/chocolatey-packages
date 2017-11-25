@@ -1,4 +1,5 @@
 [![](https://ci.appveyor.com/api/projects/status/github/brunoyb/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/brunoyb/chocolatey-packages)
+[![](http://transparent-favicon.info/favicon.ico)](#)[![](http://transparent-favicon.info/favicon.ico)](#)
 [Update status](https://gist.github.com/brunoyb/0c6170c4a6f7450fa864dd59684509d9)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/ShadowDancer43](https://chocolatey.org/profiles/ShadowDancer43)
@@ -10,8 +11,10 @@ The repository is setup so that you can manage your packages entirely from the G
 
 To run locally you will need:
 
-- Powershell 5+: `cinst powershell`
-- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `cinst au`
+- Powershell 5+.
+- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `cinst au`.
+
+In order to setup AppVeyor update runner please take a look at the AU wiki [AppVeyor section](https://github.com/majkinetor/au/wiki/AppVeyor).
 
 ## Create a package
 
@@ -19,7 +22,7 @@ To create a new package see [Creating the package updater script](https://github
 
 ## Testing the package
 
-In a package directory run: `Test-Package`. This function can be used to start testing in [chocolatey-test-environment](https://github.com/majkinetor/chocolatey-test-environment) via `Vagrant` parameter or it can test packages locally.
+In a package directory run: `Test-Package`.
 
 ## Automatic package update
 
@@ -55,18 +58,19 @@ You can also call AU method `Update-AUPackages` (alias `updateall`) on its own i
 
     updateall -Options ([ordered]@{ Force = $true })
 
-To quickly test if all of the packages update force all with `test_all.ps1` script:
+## Testing all packages
 
+You can force the update of all or subset of packages to see how they behave when complete update procedure is done:
+
+
+```powershell
+./test_all.ps1                            # Test force update on all packages
+./test_all.ps1 'cdrtfe','freecad', 'p*'   # Test force update on only given packages
+./test_all.ps1 'random 3'                 # Split packages in 3 groups and randomly select and test 1 of those each time
 ```
-master~> .\test_all.ps1
-Updating 4 automatic packages at 2017-04-30 10:54:34 (forced)
-Push is disabled
-FORCE IS ENABLED. All packages will be updated
-   less is updated to 4.87.0.20170430
-   copyq is updated to 3.0.0.20170430
-   librecad is updated to 2.1.3.20170430
-   prey is updated to 1.6.6.20170430
-```
+
+
+**Note**: If you run this locally your packages will get updated. Use `git reset --hard` after running this to revert the changes.
 
 ## Pushing To Community Repository Via Commit Message
 

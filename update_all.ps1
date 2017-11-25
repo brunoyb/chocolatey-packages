@@ -11,14 +11,24 @@ $Options = [ordered]@{
     UpdateTimeout = 1200                                    #Update timeout in seconds
     Threads       = 10                                      #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
+    PushAll       = $true                                   #Allow to push multiple packages at once
     PluginPath    = ''                                      #Path to user plugins
-
-    IgnoreOn = @(                                           #Error message parts to set the package ignore status
+    IgnoreOn      = @(                                      #Error message parts to set the package ignore status
+        'Could not create SSL/TLS secure channel'
+        'Could not establish trust relationship'
+        'The operation has timed out'
+        'Internal Server Error'
+        'Service Temporarily Unavailable'
     )
-    RepeatOn = @(                                           #Error message parts on which to repeat package updater
-        'Unable to create secure channel'
+    RepeatOn      = @(                                      #Error message parts on which to repeat package updater
+        'Could not create SSL/TLS secure channel'
         'Could not establish trust relationship'
         'Unable to connect'
+        'The remote name could not be resolved'
+        'Choco pack failed with exit code 1'
+        'The operation has timed out'
+        'Internal Server Error'
+        'An exception occurred during a WebClient request'
     )
     RepeatSleep   = 0                                       #How much to sleep between repeats in seconds, by default 0
     RepeatCount   = 1                                       #How many times to repeat on errors, by default 1
@@ -29,7 +39,7 @@ $Options = [ordered]@{
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
             NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
-            UserMessage = "[History](#update-history)"      #  Markdown, Text: Custom user message to show
+            UserMessage = "[History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id_test) | **TESTING AU NEXT VERSION**"       #  Markdown, Text: Custom user message to show
             NoIcons     = $false                            #  Markdown: don't show icon
             IconSize    = 32                                #  Markdown: icon size
             Title       = ''                                #  Markdown, Text: TItle of the report, by default 'Update-AUPackages'
@@ -37,7 +47,7 @@ $Options = [ordered]@{
     }
 
     History = @{
-        Lines = 30                                          #Number of lines to show
+        Lines = 120                                         #Number of lines to show
         Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
         Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
     }
@@ -51,6 +61,11 @@ $Options = [ordered]@{
     Git = @{
         User     = ''                                       #Git username, leave empty if github api key is used
         Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
+    }
+
+    GitReleases = @{
+        ApiToken    = $Env:github_api_key                   #Your github api key
+        ReleaseType = 'package'                             #Either 1 release per date, or 1 release per package
     }
 
     RunInfo = @{
@@ -67,7 +82,7 @@ $Options = [ordered]@{
                 Port       = $Env:mail_port
                 EnableSsl  = $Env:mail_enablessl -eq 'true'
                 Attachment = "$PSScriptRoot\update_info.xml"
-                UserMessage = ''
+                UserMessage = "Update status: https://gist.github.com/$Env:gist_id"
                 SendAlways  = $false                        #Send notifications every time
              }
            } else {}

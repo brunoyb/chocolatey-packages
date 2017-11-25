@@ -9,10 +9,10 @@
      - Pass any cinst option after that (some may not work ofc. such as `version`)
 
    Example:
-     iwr https://goo.gl/SZ9c3m | iex; cinst-gh furmark --force
+     iwr https://goo.gl/YUg3kq | iex; cinst-gh furmark --force
 #>
 function cinst-gh {
-    $Repo = "https://github.com/majkinetor/au-packages/tree/master"
+    $Repo = "https://github.com/brunoyb/chocolatey-packages/tree/master"
 
     $name = $args[0]
     $download_page = iwr $Repo/$name -UseBasicParsing
