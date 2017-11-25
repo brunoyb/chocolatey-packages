@@ -1,5 +1,7 @@
 ﻿Import-Module AU
 
+. $PSScriptRoot\..\..\_scripts\all.ps1
+
 $releases = 'https://github.com/k-takata/the_silver_searcher-win32/releases'
 
 function global:au_SearchReplace {
@@ -20,13 +22,17 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_AfterUpdate {
+	Set-DescriptionFromReadme -SkipFirst 2
+}
+
 function global:au_GetLatest {
 	$downloadPage = Invoke-WebRequest -Uri $releases
 
 	$re = 'ag-(\d{4}-\d{2}-\d{2})_(.+)-(x64|x86)\.zip$'
 	$url = $downloadPage.Links | Where-Object href -Match $re | Select-Object -First 2 -Expand href
 
-	$version = $Matches[2] -Replace '-', '.'
+	$version = $Matches[2] -Replace '-g[A-Fa-f0-9]{7}$', '' -Replace '-', '.'
 	$url32 = 'https://github.com' + $url[1] -Replace '%2F', '/'
 	$url64 = 'https://github.com' + $url[0] -Replace '%2F', '/'
 	$releaseNotes = "https://github.com/k-takata/the_silver_searcher-win32/releases/tag/$($Matches[1])/$($Matches[2])"
