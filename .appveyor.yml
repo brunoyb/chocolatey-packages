@@ -47,12 +47,12 @@ init:
 - git config --global user.email "chocolatey@realdimensions.net"
 - git config --global user.name "Chocolatey"
 - git config --global core.safecrlf false
-- cinst chocolatey-core.extension
 
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
 - ps: $PSVersionTable
 - git --version
+- choco --version
 - ps: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
@@ -62,6 +62,9 @@ install:
     '  {0,-20} {1}' -f 'SCHEDULED BUILD:', ($Env:APPVEYOR_SCHEDULED_BUILD -eq 'true')
     '  {0,-20} {1}' -f 'FORCED BUILD:'   , ($Env:APPVEYOR_FORCED_BUILD    -eq 'true')
     '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
+
+# Uncomment the below line if you are using any of the functions from chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension. Ensure you also have it listed in your package's dependencies
+# - cinst chocolatey-core.extension
 
 build_script:
 - ps: |
@@ -81,7 +84,10 @@ build_script:
                     Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
                     $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
                     if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
-                    pushd $package_dir; choco pack; Push-Package; popd
+                    pushd $package_dir
+                      if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
+                      choco pack; Push-Package;
+                    popd
                 }
                 return
             }
@@ -92,10 +98,9 @@ build_script:
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
-- path: au_temp.zip
-- path: Update-AUPackages.md
-- path: Update-History.md
 - path: update_info.xml
+- path: Update-AUPackages.md
+- path: au_temp.zip
 
 notifications:
 - provider: Email

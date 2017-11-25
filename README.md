@@ -1,5 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/github/brunoyb/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/brunoyb/chocolatey-packages)
-[![](http://transparent-favicon.info/favicon.ico)](#)[![](http://transparent-favicon.info/favicon.ico)](#)
+[![](https://ci.appveyor.com/api/projects/status/github/brunoyb/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/brunoyb/chocolatey-packages)
 [Update status](https://gist.github.com/brunoyb/0c6170c4a6f7450fa864dd59684509d9)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/ShadowDancer43](https://chocolatey.org/profiles/ShadowDancer43)
@@ -11,12 +10,12 @@ The repository is setup so that you can manage your packages entirely from the G
 
 To run locally you will need:
 
-- Powershell 5+
-- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module AU`
+- Powershell 5+: `cinst powershell`
+- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `cinst au`
 
 ## Create a package
 
-To create a new package see [creating the package updater script](https://github.com/majkinetor/au#creating-the-package-updater-script).
+To create a new package see [Creating the package updater script](https://github.com/majkinetor/au#creating-the-package-updater-script).
 
 ## Testing the package
 
@@ -55,6 +54,19 @@ $au_Push      = $false       #Do not push to chocolatey
 You can also call AU method `Update-AUPackages` (alias `updateall`) on its own in the repository root. This will just run the updater for the each package without any other option from `update_all.ps1` script. For example to force update of all packages with a single command execute:
 
     updateall -Options ([ordered]@{ Force = $true })
+
+To quickly test if all of the packages update force all with `test_all.ps1` script:
+
+```
+master~> .\test_all.ps1
+Updating 4 automatic packages at 2017-04-30 10:54:34 (forced)
+Push is disabled
+FORCE IS ENABLED. All packages will be updated
+   less is updated to 4.87.0.20170430
+   copyq is updated to 3.0.0.20170430
+   librecad is updated to 2.1.3.20170430
+   prey is updated to 1.6.6.20170430
+```
 
 ## Pushing To Community Repository Via Commit Message
 
