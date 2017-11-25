@@ -10,7 +10,7 @@
     <title>sbt</title>
     <authors>Lightbend, Inc.</authors>
     <projectUrl>https://www.scala-sbt.org/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/brunoyb/chocolatey-packages/ab87c8540007ed240d940ef34da45b55653f667b/_personal/sbt/icon.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/ab87c8540007ed240d940ef34da45b55653f667b/_personal/sbt/icon.svg</iconUrl>
     <copyright>Lightbend, Inc.</copyright>
     <licenseUrl>https://github.com/sbt/sbt/blob/1.x/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,7 +20,9 @@
     <bugTrackerUrl>https://github.com/sbt/sbt/issues</bugTrackerUrl>
     <tags>sbt scala java functional programming language admin</tags>
     <summary>The interactive build tool</summary>
-    <description>sbt is a build tool for Scala, Java, and more. It requires Java 1.8 or later.</description>
+    <description><![CDATA[
+sbt is a build tool for Scala, Java, and more. It requires Java 1.8 or later.
+]]></description>
     <releaseNotes>https://github.com/sbt/sbt/releases/tag/v1.0.3</releaseNotes>
   </metadata>
   <files>
