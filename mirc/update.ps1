@@ -1,5 +1,7 @@
 ﻿Import-Module AU
 
+. $PSScriptRoot\..\_scripts\all.ps1
+
 $whatsnew = 'http://www.mirc.com/whatsnew.txt'
 
 function global:au_SearchReplace {
@@ -11,6 +13,10 @@ function global:au_SearchReplace {
 			"(?i)(^\s*[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
+}
+
+function global:au_AfterUpdate {
+	Set-DescriptionFromReadme -SkipFirst 2
 }
 
 function global:au_GetLatest {
