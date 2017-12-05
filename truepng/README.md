@@ -1,6 +1,6 @@
 # [TruePNG](https://chocolatey.org/packages/truepng)
 
 
-One of the best PNG optimizer available.
+TruePNG is one of the most advanced PNG optimizers available.
 
-[TruePNG tutorial](http://css-ig.net/articles/truepng) by Cédric Louvrier.
+[TruePNG tutorial](https://css-ig.net/articles/truepng.php) by Cédric Louvrier.

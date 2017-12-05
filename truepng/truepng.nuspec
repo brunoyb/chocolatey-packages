@@ -9,15 +9,15 @@
     <owners>Bruno Baldochi</owners>
     <title>TruePNG</title>
     <authors>x128</authors>
-    <projectUrl>http://x128.ho.ua/pngutils.html</projectUrl>
+    <projectUrl>https://css-ig.net/articles/truepng.php</projectUrl>
     <copyright>x128 © 2009-2017</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>truepng png optimizer web</tags>
-    <summary>PNG Optimizer</summary>
+    <tags>truepng png optimizer web cli</tags>
+    <summary>Command-line PNG optimizer</summary>
     <description><![CDATA[
-One of the best PNG optimizer available.
+TruePNG is one of the most advanced PNG optimizers available.
 
-[TruePNG tutorial](http://css-ig.net/articles/truepng) by Cédric Louvrier.
+[TruePNG tutorial](https://css-ig.net/articles/truepng.php) by Cédric Louvrier.
 ]]></description>
   </metadata>
   <files>
