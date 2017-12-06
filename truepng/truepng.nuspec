@@ -10,7 +10,7 @@
     <title>TruePNG</title>
     <authors>x128</authors>
     <projectUrl>https://css-ig.net/articles/truepng.php</projectUrl>
-    <copyright>x128 © 2009-2017</copyright>
+    <copyright>2009-2017 x128</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>truepng png optimizer web cli</tags>
     <summary>Command-line PNG optimizer</summary>
