@@ -35,7 +35,7 @@ function global:au_GetLatest {
 	$version = $url[0] -Split '-' | Select-Object -Last 1 -Skip 2
 	$url32 = 'https://github.com' + $url[0]
 	$url64 = 'https://github.com' + $url[1]
-	$releaseNotes = "http://docs.haskellstack.org/en/stable/ChangeLog/#$($version -Replace '\.', '')"
+	$releaseNotes = "https://github.com/commercialhaskell/stack/releases/tag/v${version}"
 
 	@{
 		Version = $version
