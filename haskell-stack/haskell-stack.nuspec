@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>haskell-stack</id>
-    <version>1.5.1</version>
+    <version>1.6.1</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/haskell-stack</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Haskell Stack</title>
@@ -43,7 +43,7 @@ The following package parameters can be set:
 These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoLocalBinOnPath /NoStackRoot"'`.
 ]]></description>
-    <releaseNotes>http://docs.haskellstack.org/en/stable/ChangeLog/#151</releaseNotes>
+    <releaseNotes>http://docs.haskellstack.org/en/stable/ChangeLog/#161</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.0.4" />
     </dependencies>
