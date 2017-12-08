@@ -29,10 +29,10 @@ function Uninstall-OutdatedVersionIfApplicable() {
 			$validExitCodes = @(0)
 
 			Uninstall-ChocolateyPackage -PackageName $packageName `
-						    -FileType $fileType `
-						    -SilentArgs $silentArgs `
-						    -File $file `
-						    -ValidExitCodes $validExitCodes
+			                            -FileType $fileType `
+			                            -SilentArgs $silentArgs `
+			                            -File $file `
+			                            -ValidExitCodes $validExitCodes
 		}
 	}
 }
