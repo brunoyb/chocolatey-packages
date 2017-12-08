@@ -1,13 +1,17 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'studio3t'
-$url32 = 'https://download.studio3t.com/studio-3t/windows/5.6.4/studio-3t-x86.msi.zip'
-$checksum32 = '27427b80f5afdabb80750aa2b660a8a30dd0a54924cc3ed7b96eb6f13e9e2618'
+$url32 = 'https://download.studio3t.com/studio-3t/windows/5.7.1/studio-3t-x86-no-shell.zip'
+$checksum32 = '80613dc27c41e12431be1394873d3e75807a0c48922ae550314bd7024eec9a40'
 $checksumType32 = 'sha256'
-$url64 = 'https://download.studio3t.com/studio-3t/windows/5.6.4/studio-3t-x64.msi.zip'
-$checksum64 = '2d94b368e451f11f79de42be6b83986116f2668d29becbf9e4a2f5b809367b45'
+$url64 = 'https://download.studio3t.com/studio-3t/windows/5.7.1/studio-3t-x64.zip'
+$checksum64 = 'd27a0a067e692931ff761c3ca01039c7da46614414b7455efc5a8fe13b1b426f'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
+
+. "$toolsDir\helpers.ps1"
+
+Uninstall-OutdatedVersionIfApplicable
 
 Install-ChocolateyZipPackage -PackageName $packageName `
                              -Url $url32 `
@@ -18,13 +22,13 @@ Install-ChocolateyZipPackage -PackageName $packageName `
                              -ChecksumType64 $checksumType64 `
                              -UnzipLocation $toolsDir
 
-$fileType = 'msi'
-$silentArgs = '/quiet'
-$file = Get-ChildItem $toolsDir -Include *.msi -Recurse | Select-Object -First 1
+$fileType = 'exe'
+$silentArgs = '-q'
+$file = Get-ChildItem $toolsDir -Include *.exe -Recurse | Select-Object -First 1
 
 Install-ChocolateyInstallPackage -PackageName $packageName `
                                  -FileType $fileType `
                                  -SilentArgs $silentArgs `
                                  -File $file
 
-Remove-Item $file
+Remove-ItemRetrying $file

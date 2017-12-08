@@ -15,6 +15,10 @@ function global:au_SearchReplace {
 			"(?i)(^\s*[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
 			"(?i)(^\s*[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
 		}
+
+		".\tools\chocolateyUninstall.ps1" = @{
+			"(?i)(^\s*[$]packageName\s*=\s*)('.*')" = "`$1'$($Latest.PackageName)'"
+		}
 	}
 }
 
@@ -28,8 +32,8 @@ function global:au_GetLatest {
 	$re = '(.+) \(\d{2}-\w+-\d{4}\)'
 	if ($updatePage.Content -Match $re) {
 		$version = $Matches[1]
-		$url32 = "https://download.studio3t.com/studio-3t/windows/$version/studio-3t-x86.msi.zip"
-		$url64 = "https://download.studio3t.com/studio-3t/windows/$version/studio-3t-x64.msi.zip"
+		$url32 = "https://download.studio3t.com/studio-3t/windows/$version/studio-3t-x86-no-shell.zip"
+		$url64 = "https://download.studio3t.com/studio-3t/windows/$version/studio-3t-x64.zip"
 	} else {
 		throw "Can't match '$re'"
 	}

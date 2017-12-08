@@ -4,20 +4,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>studio3t</id>
-    <version>5.6.4</version>
+    <version>5.7.1</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/studio3t</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Studio 3T</title>
     <authors>3T</authors>
     <projectUrl>https://studio3t.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/studio3t/icon.png</iconUrl>
-    <copyright>3T Software Labs</copyright>
+    <copyright>2014-2017 3T Software Labs GmbH</copyright>
     <licenseUrl>http://files.studio3t.com/eula/eula.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>studio3t mongochef mongodb mongo nosql database db admin trial</tags>
-    <summary>The IDE for MongoDB</summary>
+    <tags>studio3t mongodb gui ide mongo nosql database db admin trial</tags>
+    <summary>The MongoDB GUI and IDE</summary>
     <description><![CDATA[
-Formerly known as MongoChef, Studio 3T helps thousands of MongoDB developers and administrators with their everyday jobs by providing the finest MongoDB tools on the market.
+Used by most MongoDB professionals, Studio 3T makes working with MongoDB easy with features like Visual Query Builder, IntelliShell, SQL Query, Aggregation Editor and much more.
 
 Studio 3T is free for non-commercial use or you can freely evaluate it for commercial purposes for 14 days.
 ]]></description>
