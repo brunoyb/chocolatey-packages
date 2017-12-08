@@ -12,6 +12,10 @@ function global:au_SearchReplace {
 			"(?i)(^\s*[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
 			"(?i)(^\s*[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
+
+		".\tools\chocolateyUninstall.ps1" = @{
+			"(?i)(^\s*[$]packageName\s*=\s*)('.*')" = "`$1'$($Latest.PackageName)'"
+		}
 	}
 }
 
