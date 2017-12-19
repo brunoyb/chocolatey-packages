@@ -2,7 +2,7 @@
 
 . $PSScriptRoot\..\..\_scripts\all.ps1
 
-$updateUrl = 'https://github.com/sbt/sbt/releases/latest'
+$updateUrl = 'https://github.com/sbt/sbt/releases'
 
 function global:au_SearchReplace {
 	@{
