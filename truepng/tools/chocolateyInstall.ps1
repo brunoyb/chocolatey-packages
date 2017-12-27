@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'truepng'
-$url = 'http://x128.ho.ua/clicks/clicks.php?uri=TruePNG_0624.zip'
-$checksum = '9b735e660e8a39c37bd8239e10f3dd74b39b9e251f70fd8273b82c7ffc835959'
+$url = 'http://x128.ho.ua/clicks/clicks.php?uri=TruePNG_0625.zip'
+$checksum = 'a20d7121bf377e9ddb2d7d04995bb4b032d523caeb7f7ea3360acad6bc5901ab'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 

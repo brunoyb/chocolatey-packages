@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>truepng</id>
-    <version>0.6.2.4</version>
+    <version>0.6.2.5</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/truepng</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>TruePNG</title>
