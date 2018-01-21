@@ -1,7 +1,5 @@
 ﻿Import-Module AU
 
-. $PSScriptRoot\..\..\_scripts\all.ps1
-
 $updateUrl = 'https://github.com/sbt/sbt/releases'
 
 function global:au_SearchReplace {
@@ -17,10 +15,6 @@ function global:au_SearchReplace {
 			"(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`$1$($Latest.ReleaseNotes)`$2"
 		}
 	}
-}
-
-function global:au_AfterUpdate {
-	Set-DescriptionFromReadme -SkipFirst 2
 }
 
 function global:au_GetLatest {

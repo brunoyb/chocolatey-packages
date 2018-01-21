@@ -1,7 +1,5 @@
 ﻿Import-Module AU
 
-. $PSScriptRoot\..\_scripts\all.ps1
-
 $updateUrl = 'http://x128.ho.ua/pngutils.html'
 
 function global:au_SearchReplace {
@@ -13,10 +11,6 @@ function global:au_SearchReplace {
 			"(?i)(^\s*[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
-}
-
-function global:au_AfterUpdate {
-	Set-DescriptionFromReadme -SkipFirst 2
 }
 
 function global:au_GetLatest {
