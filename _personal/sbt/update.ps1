@@ -2,6 +2,11 @@
 
 $updateUrl = 'https://github.com/sbt/sbt/releases'
 
+function global:au_BeforeUpdate {
+	$Latest.Checksum32 = Get-RemoteChecksum $Latest.URL sha256
+	$Latest.ChecksumType32 = 'sha256'
+}
+
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyInstall.ps1" = @{
@@ -34,4 +39,4 @@ function global:au_GetLatest {
 	}
 }
 
-Update-Package -ChecksumFor 32
+Update-Package -ChecksumFor none
