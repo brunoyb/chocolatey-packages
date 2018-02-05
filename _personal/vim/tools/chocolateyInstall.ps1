@@ -3,8 +3,8 @@
 $packageName = 'vim'
 $fileType = 'exe'
 $silentArgs = '/S'
-$url = 'https://github.com/vim/vim-win32-installer/releases/download/v8.0.1431/gvim_8.0.1431_x86.exe'
-$checksum = 'f9498a0b9055439f886f3e010a42f3abe336da635a3e1e589403ac235effc683'
+$url = 'https://github.com/vim/vim-win32-installer/releases/download/v8.0.1473/gvim_8.0.1473_x86.exe'
+$checksum = '3f77e112bac387a99df08bbcef997299372c5258fcc09f5f691c098daf9d2647'
 $checksumType = 'sha256'
 
 Install-ChocolateyPackage -PackageName $packageName `
