@@ -9,7 +9,7 @@ $checksum64 = 'a02ebaa23db84b22eea5f26145f504365fd73f280e3e7efa6ca582d2dde2b46b'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
-. "$toolsDir\helpers.ps1"
+. $toolsDir\helpers.ps1
 
 Uninstall-OutdatedVersionIfApplicable
 
