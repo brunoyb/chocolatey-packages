@@ -1,24 +1,24 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'vim'
-$fileType = 'exe'
-$silentArgs = '/S'
-$url = 'https://github.com/vim/vim-win32-installer/releases/download/v8.0.1473/gvim_8.0.1473_x86.exe'
-$checksum = '3f77e112bac387a99df08bbcef997299372c5258fcc09f5f691c098daf9d2647'
-$checksumType = 'sha256'
+$url32 = 'https://github.com/vim/vim-win32-installer/releases/download/v8.0.1475/gvim_8.0.1475_x86.zip'
+$checksum32 = '76be3b9e21ed1388b2250ab396d917b9cdfc992493adf65141b289dbf45257e5'
+$checksumType32 = 'sha256'
+$url64 = 'https://github.com/vim/vim-win32-installer/releases/download/v8.0.1475/gvim_8.0.1475_x64.zip'
+$checksum64 = 'bea617ab5399edcaa3c6db7a3a530368683ada3ad9b2ddcaccec42df13f5e2cd'
+$checksumType64 = 'sha256'
+$toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
-Install-ChocolateyPackage -PackageName $packageName `
-                          -FileType $fileType `
-                          -SilentArgs $silentArgs `
-                          -Url $url `
-                          -Checksum $checksum `
-                          -ChecksumType $checksumType
+Install-ChocolateyZipPackage -PackageName $packageName `
+                             -Url $url32 `
+                             -Checksum $checksum32 `
+                             -ChecksumType $checksumType32 `
+                             -Url64bit $url64 `
+                             -Checksum64 $checksum64 `
+                             -ChecksumType64 $checksumType64 `
+                             -UnzipLocation $toolsDir
 
-[array] $key = Get-UninstallRegistryKey -SoftwareName 'Vim*'
+Start-ChocolateyProcessAsAdmin -Statements '-add-start-menu -install-openwith -install-popup' `
+                               -ExeToRun "$(Join-Path $toolsDir 'vim\vim80\install.exe')"
 
-if ($key.Count -eq 1) {
-	$key | ForEach-Object {
-		Write-Host 'Adding the vim installation directory to PATH …'
-		Install-ChocolateyPath "$(Split-Path -Parent $_.UninstallString)" 'Machine'
-	}
-}
+Install-ChocolateyPath "$(Join-Path $toolsDir 'vim\vim80')" 'Machine'
