@@ -3,8 +3,8 @@
 $packageName = 'robo3t.install'
 $fileType = 'exe'
 $silentArgs = '/S'
-$url64 = 'https://download.robomongo.org/1.1.1/windows/robo3t-1.1.1-windows-x86_64-c93c6b0.exe'
-$checksum64 = 'fc871b31f40d758aab40d29b56341f670940ef39de6f08a5cca7325480091c90'
+$url64 = 'https://download.robomongo.org/1.2.1/windows/robo3t-1.2.1-windows-x86_64-3e50a65.exe'
+$checksum64 = 'e9c1583cfcc46996d863ae9c8127ec042a49f1e141d2951162df0c01dfed32f9'
 $checksumType64 = 'sha256'
 
 Install-ChocolateyPackage -PackageName $packageName `
