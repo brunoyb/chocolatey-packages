@@ -3,7 +3,7 @@ function Uninstall-OutdatedVersion() {
 
 	if ($key.Count -eq 1) {
 		$key | ForEach-Object {
-			Write-Host 'A sbt package was found and needs to be uninstalled before proceeding with the upgrade.'
+			Write-Host 'sbt needs to be uninstalled before upgrading.'
 
 			$fileType = 'msi'
 			$silentArgs = "$($_.PSChildName) /quiet"
