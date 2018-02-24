@@ -11,7 +11,7 @@ $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
 . $toolsDir\helpers.ps1
 
-Uninstall-OutdatedVersionIfApplicable
+Uninstall-OutdatedVersion
 
 Install-ChocolateyZipPackage -PackageName $packageName `
                              -Url $url32 `
