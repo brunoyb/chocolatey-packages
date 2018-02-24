@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ag</id>
-    <version>2.1.0.22</version>
+    <version>2.1.0.28</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/ag</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>The Silver Searcher</title>
@@ -28,7 +28,7 @@ A code searching tool similar to `ack`, with a focus on speed.
 * If there are files in your source repo you don't want to search, just add their patterns to a `.ignore` file. (\*cough\* `*.min.js` \*cough\*)
 * The command name is 33% shorter than `ack`, and all keys are on the home row!
 ]]></description>
-    <releaseNotes>https://github.com/k-takata/the_silver_searcher-win32/releases/tag/2017-12-28/2.1.0-22-g5516568</releaseNotes>
+    <releaseNotes>https://github.com/k-takata/the_silver_searcher-win32/releases/tag/2018-01-25/2.1.0-28-g4aa9f05</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
