@@ -28,7 +28,7 @@ function Uninstall-OutdatedVersion() {
 				$file = ''
 			} else {
 				$fileType = 'exe'
-				$silentArgs = '-q'
+				$silentArgs = '-q -console'
 				$file = $_.UninstallString
 			}
 

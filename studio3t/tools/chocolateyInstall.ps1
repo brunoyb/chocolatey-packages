@@ -23,7 +23,7 @@ Install-ChocolateyZipPackage -PackageName $packageName `
                              -UnzipLocation $toolsDir
 
 $fileType = 'exe'
-$silentArgs = '-q'
+$silentArgs = '-q -console'
 $file = Get-ChildItem $toolsDir -Include *.exe -Recurse | Select-Object -First 1
 
 Install-ChocolateyInstallPackage -PackageName $packageName `
