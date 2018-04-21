@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fossil</id>
+    <version>2.5</version>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/fossil</packageSourceUrl>
+    <owners>Bruno Baldochi</owners>
+    <title>Fossil SCM</title>
+    <authors>D. Richard Hipp</authors>
+    <projectUrl>https://www.fossil-scm.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/50ec1ea7283b01fafc968d92305ee8bcbb72a6ed/_personal/fossil/icon.png</iconUrl>
+    <copyright>2007 D. Richard Hipp</copyright>
+    <licenseUrl>https://www.fossil-scm.org/fossil/doc/trunk/COPYRIGHT-BSD2.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://www.fossil-scm.org/fossil/dir?ci=tip</projectSourceUrl>
+    <docsUrl>https://www.fossil-scm.org/fossil/help</docsUrl>
+    <mailingListUrl>http://mailinglists.sqlite.org/cgi-bin/mailman/listinfo/fossil-users</mailingListUrl>
+    <bugTrackerUrl>https://www.fossil-scm.org/fossil/rptview?rn=1</bugTrackerUrl>
+    <tags>fossil dvcs git scm sqlite cli</tags>
+    <summary>Simple, high-reliability, distributed software configuration management system</summary>
+    <description><![CDATA[
+Fossil is a cross-platform command line interface server that runs on Linux, BSD derivatives, Mac and Windows. It is capable of performing distributed version control, bug tracking, wiki services, and blogging. The software has a built-in web interface, which reduces project tracking complexity and promotes situational awareness. A user may simply type "fossil ui" from within any check-out and Fossil automatically opens the user's web browser in a page that gives detailed history and status information on that project.
+
+#### Documentation
+
+* [FAQ](https://www.fossil-scm.org/fossil/doc/trunk/www/faq.wiki)
+* [Wiki](https://www.fossil-scm.org/fossil/wcontent?all=1)
+]]></description>
+    <releaseNotes>https://www.fossil-scm.org/index.html/doc/trunk/www/changes.wiki</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
