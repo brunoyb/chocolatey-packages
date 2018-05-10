@@ -3,4 +3,4 @@
 
 Used by most MongoDB professionals, Studio 3T makes working with MongoDB easy with features like Visual Query Builder, IntelliShell, SQL Query, Aggregation Editor and much more.
 
-Studio 3T is free for non-commercial use or you can freely evaluate it for commercial purposes for 14 days.
+Studio 3T is free for non-commercial use or you can freely evaluate it for commercial purposes for 30 days.
