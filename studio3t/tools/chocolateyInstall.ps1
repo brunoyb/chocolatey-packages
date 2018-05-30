@@ -31,4 +31,4 @@ Install-ChocolateyInstallPackage -PackageName $packageName `
                                  -SilentArgs $silentArgs `
                                  -File $file
 
-Remove-ItemRetrying $file
+TryRemove-Item $file

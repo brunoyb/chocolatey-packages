@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
 
 	$re = 'robo3t-.+-windows-x86_64-.+\.zip$'
-	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
+	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
 
 	$version = $url64 -Split '-' | Select-Object -First 1 -Skip 1
 

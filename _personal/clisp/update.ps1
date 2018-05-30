@@ -28,7 +28,7 @@ function global:au_GetLatest {
 		throw "Can't match '$re'"
 	}
 
-	$releaseNotes = $updatePage.Links | Where-Object href -Match 'NEWS' | Select-Object -First 1 -Expand href
+	$releaseNotes = $updatePage.Links | Where-Object href -Match 'NEWS' | Select-Object -First 1 -ExpandProperty href
 
 	@{
 		Version = $version

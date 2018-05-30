@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = 'ag-(\d{4}-\d{2}-\d{2})_(.+)-(x64|x86)\.zip$'
-	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 2 -Expand href
+	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 2 -ExpandProperty href
 
 	$version = $Matches[2] -Replace '-g[A-Fa-f0-9]{7}$', '' -Replace '-', '.'
 	$url32 = 'https://github.com' + $url[1] -Replace '%2F', '/'

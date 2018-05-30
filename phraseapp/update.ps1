@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = 'phraseapp_windows_amd64\.exe\.zip$'
-	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
+	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
 
 	$version = $url64 -Split '/' | Select-Object -Last 1 -Skip 1
 	$url64 = 'https://github.com' + $url64

@@ -1,4 +1,4 @@
-<# Installs package directly from Github repository
+﻿<# Installs package directly from Github repository
    To use with your own repo:
      - Set the path to your packages root in $Repo
      - Create short link to this raw github script via for example goo.gl

@@ -1,4 +1,4 @@
-function Uninstall-OutdatedVersion() {
+﻿function Uninstall-OutdatedVersion() {
 	[array] $key = Get-UninstallRegistryKey -SoftwareName 'sbt*'
 
 	if ($key.Count -eq 1) {

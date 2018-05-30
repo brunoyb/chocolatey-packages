@@ -1,13 +1,13 @@
-function Remove-ItemRetrying([string] $file, [int] $tries = 5) {
+﻿function TryRemove-Item([string] $Path, [int] $Tries = 5) {
 	$triesCount = 0
 	do {
 		try {
-			Remove-Item $file
+			Remove-Item $Path
 			$fileRemovedSuccessfully = $true
 		} catch {
 			$triesCount++
-			if ($triesCount -ge $tries) {
-				Write-Warning "Impossible to remove file $file after $tries attempts. Giving up..."
+			if ($triesCount -ge $Tries) {
+				Write-Warning "Impossible to remove $Path after $Tries attempts. Giving up..."
 				break
 			}
 			Start-Sleep 5

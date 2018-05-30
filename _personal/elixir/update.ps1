@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
 	$re = 'Precompiled\.zip$'
-	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -Expand href
+	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
 
 	$version = $url -Split '/|v' | Select-Object -Last 1 -Skip 1
 	$url = 'https://github.com' + $url
