@@ -20,10 +20,10 @@ Install-ChocolateyZipPackage -PackageName $packageName `
                              -ChecksumType64 $checksumType64 `
                              -UnzipLocation $toolsDir
 
-if ($packageParameters.NoLocalBinOnPath -NE $true) {
+if ($packageParameters.NoLocalBinOnPath -ne $true) {
 	Install-ChocolateyPath "$(Join-Path $env:APPDATA 'local\bin')" 'User'
 }
 
-if ($packageParameters.NoStackRoot -NE $true) {
+if ($packageParameters.NoStackRoot -ne $true) {
 	Install-ChocolateyEnvironmentVariable 'STACK_ROOT' "$(Join-Path $env:SystemDrive 'sr')" 'User'
 }
