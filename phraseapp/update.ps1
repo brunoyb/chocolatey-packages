@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/phrase/phraseapp-client/releases'
+$updateUrl = 'https://github.com/phrase/phraseapp-client/releases/latest'
 
 function global:au_SearchReplace {
 	@{
