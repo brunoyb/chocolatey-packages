@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$updatePage = Invoke-WebRequest -Uri $updateUrl
+	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
 
 	$re = 'phraseapp_windows_amd64\.exe\.zip$'
 	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
