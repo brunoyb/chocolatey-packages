@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'elixir'
-$url = 'https://github.com/elixir-lang/elixir/releases/download/v1.6.5/Precompiled.zip'
-$checksum = 'ba2afd91ce65ec94d460a94752fa2560391b349d0fd598847f496ee041a44b80'
+$url = 'https://github.com/elixir-lang/elixir/releases/download/v1.6.6/Precompiled.zip'
+$checksum = 'd6a84726a042407110d3b13b1ce8d9524b4a50df68174e79d89a9e42e30b410b'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
