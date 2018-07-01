@@ -23,7 +23,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$updatePage = Invoke-WebRequest -Uri $updateUrl
+	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
 
 	$re = 'sbt-.+\.msi$'
 	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
