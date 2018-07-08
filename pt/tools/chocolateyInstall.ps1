@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'pt'
-$url32 = 'https://github.com/monochromegane/the_platinum_searcher/releases/download/v2.1.5/pt_windows_386.zip'
-$checksum32 = '5756ebf64d3d65aa4ef7bb176f5170ea8abfd5e23bf349d7c64a408b2201732b'
+$url32 = 'https://github.com/monochromegane/the_platinum_searcher/releases/download/v2.1.6/pt_windows_386.zip'
+$checksum32 = 'e9ebd094e6b837d0a6b2bcead377f9321e62db990b6386b8a7921e94fede3c22'
 $checksumType32 = 'sha256'
-$url64 = 'https://github.com/monochromegane/the_platinum_searcher/releases/download/v2.1.5/pt_windows_amd64.zip'
-$checksum64 = '0f02db8eba977bc50b743ed18b4ba8efb769b7ade5f8a5c84e869d44117924bb'
+$url64 = 'https://github.com/monochromegane/the_platinum_searcher/releases/download/v2.1.6/pt_windows_amd64.zip'
+$checksum64 = 'c0916da58860e509932f6e8558a90e39038e4fe3665c83319a43fd83e37ad7b0'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
