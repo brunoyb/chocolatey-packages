@@ -2,6 +2,13 @@
 
 $updateUrl = 'http://files.studio3t.com/changelog/changelog.txt'
 
+function global:au_BeforeUpdate {
+	$Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 sha256
+	$Latest.ChecksumType32 = 'sha256'
+	$Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64 sha256
+	$Latest.ChecksumType64 = 'sha256'
+}
+
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyInstall.ps1" = @{
@@ -39,4 +46,4 @@ function global:au_GetLatest {
 	}
 }
 
-Update-Package
+Update-Package -ChecksumFor none
