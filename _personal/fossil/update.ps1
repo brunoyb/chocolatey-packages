@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://www.fossil-scm.org/index.html/uv/download.html'
+$updateUrl = 'https://www.fossil-scm.org/index.html/uv/download.js'
 
 function global:au_SearchReplace {
 	@{
