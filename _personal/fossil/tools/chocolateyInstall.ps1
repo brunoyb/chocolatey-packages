@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'fossil'
-$url = 'https://www.fossil-scm.org/index.html/uv/fossil-w32-2.6.zip'
-$checksum = '8911c87f06cfe7c9d43825e79c8331ac31723434df62dc1d53d7ba5d6ca15edc'
+$url = 'https://www.fossil-scm.org/index.html/uv/fossil-w32-2.7.zip'
+$checksum = 'd245dd626f755bfce65265e4b5a5000df15ff3e1c0f4da0838b3bbd953eb32a0'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
