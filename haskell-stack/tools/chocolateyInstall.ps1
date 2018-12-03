@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'haskell-stack'
-$url32 = 'https://github.com/commercialhaskell/stack/releases/download/v1.9.1/stack-1.9.1-windows-i386.zip'
-$checksum32 = '049663dafd1c4e5f5d1cf9cb16dc200787fe3ea31d2f04dcd77dd3286e41aa72'
+$url32 = 'https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-windows-i386.zip'
+$checksum32 = '3d73c8a63503efc387a926a705d2cde013ebc3a991f6f62bfccc12aa62b5b8aa'
 $checksumType32 = 'sha256'
-$url64 = 'https://github.com/commercialhaskell/stack/releases/download/v1.9.1/stack-1.9.1-windows-x86_64.zip'
-$checksum64 = '7b1c22b9171f7a7cd70d776c8853ce7819da949fcccd69e7d87c948ac7e7140f'
+$url64 = 'https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-windows-x86_64.zip'
+$checksum64 = '9ff25247ad90478bdea042df2520e7865521d9023ba8dc6eae79875e1b11fcbb'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
