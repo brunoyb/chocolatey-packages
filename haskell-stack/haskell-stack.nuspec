@@ -10,7 +10,7 @@
     <title>Haskell Stack</title>
     <authors>Stack contributors</authors>
     <projectUrl>http://haskellstack.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/haskell-stack/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@ef3e7280d17af850e074ec9c47629076719b81dc/haskell-stack/icon.png</iconUrl>
     <copyright>Stack contributors</copyright>
     <licenseUrl>https://github.com/commercialhaskell/stack/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

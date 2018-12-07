@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/haskell-stack/icon.png" width="48" height="48" /> [Haskell Stack](https://chocolatey.org/packages/haskell-stack)
+# <img src="https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@ef3e7280d17af850e074ec9c47629076719b81dc/haskell-stack/icon.png" width="48" height="48" /> [Haskell Stack](https://chocolatey.org/packages/haskell-stack)
 
 
 Stack is a cross-platform build tool for Haskell that handles management of the toolchain (including the GHC compiler and MSYS2 on Windows), building and registering libraries, and more.

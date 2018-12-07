@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/brunoyb/chocolatey-packages/c2a636653b158d2cb375c1b2db7d4f19cdcb78ff/mirc/icon.png" width="48" height="48" /> [mIRC](https://chocolatey.org/packages/mirc)
+# <img src="https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@c2a636653b158d2cb375c1b2db7d4f19cdcb78ff/mirc/icon.png" width="48" height="48" /> [mIRC](https://chocolatey.org/packages/mirc)
 
 
 mIRC is a full featured Internet Relay Chat client for Windows that can be used to communicate, share, play or work with others on IRC networks around the world, either in multi-user group conferences or in one-to-one private discussions.

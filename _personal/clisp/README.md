@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/brunoyb/chocolatey-packages/8a54ae7d3c3c6f99cc2df38499968b5830a29353/_personal/clisp/icon.png" width="48" height="48" /> CLISP
+# <img src="https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@8a54ae7d3c3c6f99cc2df38499968b5830a29353/_personal/clisp/icon.png" width="48" height="48" /> CLISP
 
 
 This is GNU CLISP, an ANSI Common Lisp implementation.
