@@ -10,7 +10,7 @@
     <title>Vim</title>
     <authors>Bram Moolenaar, Vim Community</authors>
     <projectUrl>http://www.vim.org</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/8f4ee1637eb670a687d38bb2dec77b9060126c81/_personal/vim/icon.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@8f4ee1637eb670a687d38bb2dec77b9060126c81/_personal/vim/icon.svg</iconUrl>
     <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/vim/vim</projectSourceUrl>

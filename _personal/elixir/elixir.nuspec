@@ -10,7 +10,7 @@
     <title>Elixir</title>
     <authors>José Valim</authors>
     <projectUrl>http://elixir-lang.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/_personal/elixir/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@ef3e7280d17af850e074ec9c47629076719b81dc/_personal/elixir/icon.png</iconUrl>
     <copyright>Plataformatec</copyright>
     <licenseUrl>https://github.com/elixir-lang/elixir/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

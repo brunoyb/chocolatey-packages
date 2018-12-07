@@ -10,7 +10,7 @@
     <title>Robo 3T (Portable)</title>
     <authors>3T</authors>
     <projectUrl>https://robomongo.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/brunoyb/chocolatey-packages/9c3673e5ec56deb899fbd3a7599800a797e0a7ee/robo3t.portable/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@9c3673e5ec56deb899fbd3a7599800a797e0a7ee/robo3t.portable/icon.png</iconUrl>
     <copyright>3T Software Labs</copyright>
     <licenseUrl>https://github.com/Studio3T/robomongo/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

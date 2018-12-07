@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/brunoyb/chocolatey-packages/ef3e7280d17af850e074ec9c47629076719b81dc/_personal/elixir/icon.png" width="48" height="48" /> Elixir
+# <img src="https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@ef3e7280d17af850e074ec9c47629076719b81dc/_personal/elixir/icon.png" width="48" height="48" /> Elixir
 
 
 Elixir is a functional meta-programming aware language built on top of the Erlang VM. It is a dynamic language with flexible syntax with macros support that leverages Erlang's abilities to build concurrent, distributed, fault-tolerant applications with hot code upgrades.
