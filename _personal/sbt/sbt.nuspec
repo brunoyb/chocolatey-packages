@@ -8,10 +8,10 @@
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/sbt</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>sbt</title>
-    <authors>Lightbend, Inc.</authors>
+    <authors>Lightbend Inc.</authors>
     <projectUrl>https://www.scala-sbt.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@ab87c8540007ed240d940ef34da45b55653f667b/_personal/sbt/icon.svg</iconUrl>
-    <copyright>2011-2018 Lightbend, Inc.</copyright>
+    <copyright>2011-2017 Lightbend Inc.</copyright>
     <licenseUrl>https://github.com/sbt/sbt/blob/develop/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/sbt/sbt</projectSourceUrl>
