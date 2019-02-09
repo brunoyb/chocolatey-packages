@@ -17,8 +17,8 @@ The links provided with the package are related to The Haskell Tool Stack, if yo
 
 The following package parameters can be set:
 
-* `NoLocalBinOnPath` - this disables putting %APPDATA%\local\bin on Path. You usually want this if you configure your local-bin-path to other than the default.
-* `NoStackRoot` - this disables setting STACK_ROOT to %SystemDrive%\sr (e.g. C:\sr) to workaround issues with long paths. It is recommended that you leave this enabled.
+* `NoLocalBinOnPath` - this disables putting `%APPDATA%\local\bin` on Path. You usually want this if you configure your local-bin-path to other than the default.
+* `NoStackRoot` - this disables setting `STACK_ROOT` to `%SystemDrive%\sr` (e.g. `C:\sr`) to workaround issues with long paths. It is recommended that you leave this enabled.
 
 These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoLocalBinOnPath /NoStackRoot"'`.
