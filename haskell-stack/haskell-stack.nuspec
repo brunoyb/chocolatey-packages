@@ -44,9 +44,6 @@ These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoLocalBinOnPath /NoStackRoot"'`.
 ]]></description>
     <releaseNotes>https://github.com/commercialhaskell/stack/releases/tag/v1.9.3</releaseNotes>
-    <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.0.4" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
