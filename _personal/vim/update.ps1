@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
 
 	$re = 'gvim_.+_(x64|x86)\.zip$'
-	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 2 -ExpandProperty href
+	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 2 -Skip 2 -ExpandProperty href
 
 	$version = $url[0] -Split '_' | Select-Object -Last 1 -Skip 1
 	$url32 = 'https://github.com' + $url[1]
