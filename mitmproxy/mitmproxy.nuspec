@@ -22,7 +22,7 @@
     <description><![CDATA[
 The mitmproxy project's tools are a set of front-ends that expose common underlying functionality.
 
-**mitmproxy** is an interactive man-in-the-middle proxy for HTTP and HTTPS with a console interface (not available on Windows).
+**mitmproxy** is an interactive man-in-the-middle proxy for HTTP and HTTPS with a console interface (not available on Windows yet).
 
 **mitmdump** is the command-line version of mitmproxy. Think tcpdump for HTTP.
 
