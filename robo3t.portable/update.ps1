@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	$re = 'robo3t-.+-windows-x86_64-.+\.zip$'
 	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
 
-	$version = $url64 -Split '-' | Select-Object -First 1 -Skip 1
+	$version = $url64 -Split '-' | Select-Object -Last 1 -Skip 3
 
 	@{
 		Version = $version
