@@ -5,12 +5,12 @@
   <metadata>
     <id>fossil</id>
     <version>2.8</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/fossil</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/fossil</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Fossil SCM</title>
     <authors>D. Richard Hipp</authors>
     <projectUrl>https://www.fossil-scm.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@50ec1ea7283b01fafc968d92305ee8bcbb72a6ed/_personal/fossil/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@1cd6f3c76802c7fe60e38f1419e3a00e1ce5f335/fossil/icon.png</iconUrl>
     <copyright>2007 D. Richard Hipp</copyright>
     <licenseUrl>https://www.fossil-scm.org/fossil/doc/trunk/COPYRIGHT-BSD2.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
