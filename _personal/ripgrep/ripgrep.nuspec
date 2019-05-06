@@ -22,7 +22,7 @@
 ]]></description>
     <releaseNotes>https://github.com/BurntSushi/ripgrep/releases/tag/11.0.1</releaseNotes>
     <dependencies>
-      <dependency id="vcredist2015" />
+      <dependency id="vcredist140" version="14.20.27508.1" />
     </dependencies>
   </metadata>
   <files>
