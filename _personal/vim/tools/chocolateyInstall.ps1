@@ -11,21 +11,9 @@ $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $installDir = Get-ToolsLocation
 
 . $toolsDir\helpers.ps1
-. $toolsDir\Uninstall-ChocolateyPath.ps1
 
-$vimExeDir = Get-VimExeDir $installDir
-
-if ($vimExeDir) {
-	Start-ChocolateyProcessAsAdmin -Statements '-nsis' `
-	                               -ExeToRun "$(Join-Path $vimExeDir 'uninstal.exe')"
-
-	Stop-Process -ProcessName explorer
-	Sleep 5
-
-	Remove-Item -Recurse -Force "$(Join-Path $installDir 'vim')"
-
-	Uninstall-ChocolateyPath $vimExeDir 'Machine'
-}
+# Uninstall first.
+. $toolsDir\chocolateyUninstall.ps1
 
 Install-ChocolateyZipPackage -PackageName $packageName `
                              -Url $url32 `
@@ -38,7 +26,9 @@ Install-ChocolateyZipPackage -PackageName $packageName `
 
 $vimExeDir = Get-VimExeDir $installDir
 
-Start-ChocolateyProcessAsAdmin -Statements '-add-start-menu -install-openwith -install-popup' `
-                               -ExeToRun "$(Join-Path $vimExeDir 'install.exe')"
+if ($vimExeDir) {
+	Start-ChocolateyProcessAsAdmin -Statements '-add-start-menu -install-openwith -install-popup' `
+	                               -ExeToRun "$(Join-Path $vimExeDir 'install.exe')"
 
-Install-ChocolateyPath $vimExeDir 'Machine'
+	Install-ChocolateyPath $vimExeDir 'Machine'
+}

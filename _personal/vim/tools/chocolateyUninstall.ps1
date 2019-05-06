@@ -8,12 +8,14 @@ $installDir = Get-ToolsLocation
 
 $vimExeDir = Get-VimExeDir $installDir
 
-Start-ChocolateyProcessAsAdmin -Statements '-nsis' `
-                               -ExeToRun "$(Join-Path $vimExeDir 'uninstal.exe')"
+if ($vimExeDir) {
+	Start-ChocolateyProcessAsAdmin -Statements '-nsis' `
+	                               -ExeToRun "$(Join-Path $vimExeDir 'uninstal.exe')"
 
-Stop-Process -ProcessName explorer
-Sleep 5
+	Stop-Process -ProcessName explorer
+	Sleep 5
 
-Remove-Item -Recurse -Force "$(Join-Path $installDir 'vim')"
+	Uninstall-ChocolateyPath $vimExeDir 'Machine'
 
-Uninstall-ChocolateyPath $vimExeDir 'Machine'
+	Remove-Item -Recurse -Force "$(Join-Path $installDir 'vim')"
+}
