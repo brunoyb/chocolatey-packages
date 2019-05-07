@@ -5,12 +5,12 @@
   <metadata>
     <id>swi-prolog</id>
     <version>8.0.2.1</version>
-    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/swi-prolog</packageSourceUrl>
+    <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/swi-prolog</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>SWI-Prolog</title>
     <authors>Jan Wielemaker</authors>
     <projectUrl>http://www.swi-prolog.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@df30264e27536b400981dd6a9ebf18ad2aa2cf9a/_personal/swi-prolog/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@3f96fe30f1f635d504c9c01620e60ca6da9fab68/swi-prolog/icon.png</iconUrl>
     <copyright>SWI-Prolog</copyright>
     <licenseUrl>http://www.swi-prolog.org/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
