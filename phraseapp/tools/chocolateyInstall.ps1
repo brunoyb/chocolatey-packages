@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'phraseapp'
-$url64 = 'https://github.com/phrase/phraseapp-client/releases/download/1.13.0/phraseapp_windows_amd64.exe.zip'
-$checksum64 = '963e4afb338d4e8e9f091e3b53ccdf6b7d4adef626ffb025b1467d913cb552cd'
+$url64 = 'https://github.com/phrase/phraseapp-client/releases/download/1.14.0/phraseapp_windows_amd64.exe.zip'
+$checksum64 = '3dd172e6014ff32bb08446ffa3dda2c7d51d452e65ff4c6f48daf66b1603ea46'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
