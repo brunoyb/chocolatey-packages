@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/sbt/sbt/releases'
+$updateUrl = 'https://github.com/sbt/sbt/releases/latest'
 
 function global:au_BeforeUpdate {
 	$Latest.Checksum32 = Get-RemoteChecksum $Latest.URL sha256
