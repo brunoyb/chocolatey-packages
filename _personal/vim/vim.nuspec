@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vim</id>
-    <version>8.1.1282</version>
+    <version>8.1.1436</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/vim</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Vim</title>
@@ -22,7 +22,7 @@ Vim is a highly configurable text editor built to enable efficient text editing.
 
 Vim is often called a programmer’s editor, and so useful for programming that many consider it an entire IDE. It’s not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files.
 ]]></description>
-    <releaseNotes>https://github.com/vim/vim-win32-installer/releases/tag/v8.1.1282</releaseNotes>
+    <releaseNotes>https://github.com/vim/vim-win32-installer/releases/tag/v8.1.1436</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
