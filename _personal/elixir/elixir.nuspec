@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>elixir</id>
-    <version>1.8.2</version>
+    <version>1.9.0</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/_personal/elixir</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Elixir</title>
@@ -27,7 +27,7 @@ Elixir also provides first-class support for pattern matching, polymorphism via 
 
 Finally, Elixir and Erlang share the same bytecode and data types. This means you can invoke Erlang code from Elixir (and vice-versa) without any conversion or performance hit. This allows a developer to mix the expressiveness of Elixir with the robustness and performance of Erlang.
 ]]></description>
-    <releaseNotes>https://github.com/elixir-lang/elixir/releases/tag/v1.8.2</releaseNotes>
+    <releaseNotes>https://github.com/elixir-lang/elixir/releases/tag/v1.9.0</releaseNotes>
     <dependencies>
       <dependency id="erlang" version="18.1" />
     </dependencies>
