@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'vim'
-$url32 = 'https://github.com/vim/vim-win32-installer/releases/download/v8.1.1551/gvim_8.1.1551_x86.zip'
-$checksum32 = '0e507125e1a023d694b99e58add80283018b03bb97efcbb212650964744ed06e'
+$url32 = 'https://github.com/vim/vim-win32-installer/releases/download/v8.1.1612/gvim_8.1.1612_x86.zip'
+$checksum32 = 'd1a128b857eae1593738d44c0d39857cab9a21de3a40fc9c54ff8a6e04529117'
 $checksumType32 = 'sha256'
-$url64 = 'https://github.com/vim/vim-win32-installer/releases/download/v8.1.1551/gvim_8.1.1551_x64.zip'
-$checksum64 = 'c045e90cba1919ed67ac306124ba9f760815c6b2d54192d829b0908bf17457ef'
+$url64 = 'https://github.com/vim/vim-win32-installer/releases/download/v8.1.1612/gvim_8.1.1612_x64.zip'
+$checksum64 = '53b5f498d51e4d17cf39785ce4d3849024482bfffa39af30d13a7f9b00084802'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $installDir = Get-ToolsLocation
