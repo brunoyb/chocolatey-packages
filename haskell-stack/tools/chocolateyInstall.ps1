@@ -2,10 +2,10 @@
 
 $packageName = 'haskell-stack'
 $url32 = 'https://github.com/commercialhaskell/stack/releases/download/v2.1.3/stack-2.1.3-windows-i386.zip'
-$checksum32 = '8977ff6d7b0e6899bd29b6d7425b2bf4538753d3bc243e1be04e6fdb5e546707'
+$checksum32 = 'd764104ea162f12d10a5392f49587efa8f360ce179324d7e0253c74edd6f937a'
 $checksumType32 = 'sha256'
 $url64 = 'https://github.com/commercialhaskell/stack/releases/download/v2.1.3/stack-2.1.3-windows-x86_64.zip'
-$checksum64 = '5c1c6fb52e2c107d7140c58ff218d5992a4ad5dd903dbbf399ebbfcb68a5c57f'
+$checksum64 = '415fb140c7497c4771b84e45a38b65ad47f50b9adc06499b03c4f5a8899aa32a'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
