@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>phraseapp</id>
-    <version>1.15.0</version>
+    <version>1.15.1</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/phraseapp</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>PhraseApp</title>
@@ -22,7 +22,7 @@
     <description><![CDATA[
 The PhraseApp Client lets you access all API endpoints as well as easily sync your locale files between your source code and PhraseApp.
 ]]></description>
-    <releaseNotes>https://github.com/phrase/phraseapp-client/releases/tag/1.15.0</releaseNotes>
+    <releaseNotes>https://github.com/phrase/phraseapp-client/releases/tag/1.15.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
