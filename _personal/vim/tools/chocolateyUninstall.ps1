@@ -10,7 +10,7 @@ $vimExeDir = Get-VimExeDir $installDir
 
 if ($vimExeDir) {
 	Start-ChocolateyProcessAsAdmin -Statements '-nsis' `
-	                               -ExeToRun "$(Join-Path $vimExeDir 'uninstal.exe')"
+	                               -ExeToRun "$(Join-Path $vimExeDir 'uninstall.exe')"
 
 	Stop-Process -ProcessName explorer
 	Sleep 5
