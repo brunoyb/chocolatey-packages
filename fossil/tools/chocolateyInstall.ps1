@@ -2,7 +2,7 @@
 
 $packageName = 'fossil'
 $url64 = 'https://www.fossil-scm.org/home/uv/fossil-w64-2.10.zip'
-$checksum64 = '86c88d48fc78ae2276bb5a71dcb1657d58743a0557a5eecda8210372139b7d24'
+$checksum64 = '986A44B483721F4F225EBD6574D98BA4C4EF5E467DD3BB303C0D48707EE1966E'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
