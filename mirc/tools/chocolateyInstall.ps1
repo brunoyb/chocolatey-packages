@@ -3,8 +3,8 @@
 $packageName = 'mirc'
 $fileType = 'exe'
 $silentArgs = '/S /NOBACKUP'
-$url = 'https://www.mirc.com/get.php?version=757'
-$checksum = '5f27d84b9b9083d94f0935e8046fec091ea611f7b67f5079cf05004ced939c22'
+$url = 'https://www.mirc.com/get.php?version=758'
+$checksum = 'ec1ff436399e35b9def6b3e54d0ae813d04e1fedf93c9e5db7afb6dfd113ccf4'
 $checksumType = 'sha256'
 $validExitCodes = @(0, 1223)
 
