@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'studio3t'
-$url32 = 'https://download.studio3t.com/studio-3t/windows/2020.1.1/studio-3t-x86-no-shell.zip'
-$checksum32 = '9d0e7bfc7329db65c2ea0360a78b8454cc2774c50c2c0e7272d3485daabde9a7'
+$url32 = 'https://download.studio3t.com/studio-3t/windows/2020.1.2/studio-3t-x86-no-shell.zip'
+$checksum32 = 'c98791e243b177295c9d45ab5b3d12515ab3c1aedd303653e58c21e82af8bac7'
 $checksumType32 = 'sha256'
-$url64 = 'https://download.studio3t.com/studio-3t/windows/2020.1.1/studio-3t-x64.zip'
-$checksum64 = '169001859b4aee32a79865530edd8b17ebc934325d40eed1e48ddacc606b6952'
+$url64 = 'https://download.studio3t.com/studio-3t/windows/2020.1.2/studio-3t-x64.zip'
+$checksum64 = 'ee20e7fc0f4a72c901ee97a00f1652dd997c025ad156b3fc68f3dc8615992c22'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
