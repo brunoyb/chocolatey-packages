@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'ag'
-$url32 = 'https://github.com/k-takata/the_silver_searcher-win32/releases/download/2019-03-23/2.2.0-19-g965f71d/ag-2019-03-23_2.2.0-19-g965f71d-x86.zip'
-$checksum32 = '26f4bdb3c47aa3bc3adf0b0fb529304facba0e923ef39dfbef714a1ea934577e'
+$url32 = 'https://github.com/k-takata/the_silver_searcher-win32/releases/download/2020-01-11/2.2.0-22-ga509a81/ag-2020-01-11_2.2.0-22-ga509a81-x86.zip'
+$checksum32 = 'a2190b35d250f77270c64ac1d39c466f0953d2dcfc14398c644ae152f48663af'
 $checksumType32 = 'sha256'
-$url64 = 'https://github.com/k-takata/the_silver_searcher-win32/releases/download/2019-03-23/2.2.0-19-g965f71d/ag-2019-03-23_2.2.0-19-g965f71d-x64.zip'
-$checksum64 = 'e4f39c0bb6d79a23b8d4acdeb2cc1e4195c3e6e34a649d91c6dfdbff917d3418'
+$url64 = 'https://github.com/k-takata/the_silver_searcher-win32/releases/download/2020-01-11/2.2.0-22-ga509a81/ag-2020-01-11_2.2.0-22-ga509a81-x64.zip'
+$checksum64 = 'aca9b259b07db3c799cf9acbe59256210fd8cdbfc60d54bf95fe1dc2cbf16495'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
