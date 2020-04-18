@@ -12,7 +12,7 @@
     <projectUrl>https://studio3t.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/brunoyb/chocolatey-packages@ef3e7280d17af850e074ec9c47629076719b81dc/studio3t/icon.png</iconUrl>
     <copyright>2014-2018 3T Software Labs GmbH</copyright>
-    <licenseUrl>http://files.studio3t.com/eula/eula.pdf</licenseUrl>
+    <licenseUrl>https://files.studio3t.com/eula/eula.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>studio3t mongodb gui ide mongo nosql database db admin trial</tags>
     <summary>The MongoDB GUI and IDE</summary>
@@ -21,7 +21,7 @@ Used by most MongoDB professionals, Studio 3T makes working with MongoDB easy wi
 
 Studio 3T is free for non-commercial use or you can freely evaluate it for commercial purposes for 30 days.
 ]]></description>
-    <releaseNotes>http://files.studio3t.com/changelog/changelog.txt</releaseNotes>
+    <releaseNotes>https://files.studio3t.com/changelog/changelog.txt</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
