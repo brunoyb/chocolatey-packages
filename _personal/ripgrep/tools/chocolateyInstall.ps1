@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'ripgrep'
-$url32 = 'https://github.com/BurntSushi/ripgrep/releases/download/12.0.0/ripgrep-12.0.0-i686-pc-windows-msvc.zip'
-$checksum32 = 'adca09b661ea76b8cf51c8ebd4adf6bd831303a41fcc7dc9320fb405b69f025b'
+$url32 = 'https://github.com/BurntSushi/ripgrep/releases/download/12.0.1/ripgrep-12.0.1-i686-pc-windows-msvc.zip'
+$checksum32 = '8f25fca0c0508ceae8c8d4d427b1ce2c3de4921a1b588261e79ae1f5a30389a4'
 $checksumType32 = 'sha256'
-$url64 = 'https://github.com/BurntSushi/ripgrep/releases/download/12.0.0/ripgrep-12.0.0-x86_64-pc-windows-msvc.zip'
-$checksum64 = '4909fd1624a17eb4918334821bfb73ce52bd7448ad5e0e6f6a17605031f6c5d5'
+$url64 = 'https://github.com/BurntSushi/ripgrep/releases/download/12.0.1/ripgrep-12.0.1-x86_64-pc-windows-msvc.zip'
+$checksum64 = 'f44d178f37cfb1edb28fa1fffbf203ef64db8470175ae29489720ac2d17bccf0'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
