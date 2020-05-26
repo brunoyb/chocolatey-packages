@@ -16,7 +16,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://www.fossil-scm.org/fossil/dir?ci=tip</projectSourceUrl>
     <docsUrl>https://www.fossil-scm.org/fossil/help</docsUrl>
-    <mailingListUrl>http://mailinglists.sqlite.org/cgi-bin/mailman/listinfo/fossil-users</mailingListUrl>
     <bugTrackerUrl>https://www.fossil-scm.org/fossil/rptview?rn=1</bugTrackerUrl>
     <tags>fossil dvcs git scm sqlite cli</tags>
     <summary>Simple, high-reliability, distributed software configuration management system</summary>
