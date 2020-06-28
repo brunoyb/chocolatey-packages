@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/sbt/sbt/releases/latest'
+$updateUrl = 'https://www.scala-sbt.org/download.html'
 
 function global:au_BeforeUpdate {
 	$Latest.Checksum32 = Get-RemoteChecksum $Latest.URL sha256
@@ -28,8 +28,7 @@ function global:au_GetLatest {
 	$re = 'sbt-.+\.msi$'
 	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
 
-	$version = $url -Split '/|v' | Select-Object -Last 1 -Skip 1
-	$url = 'https://github.com' + $url
+	$version = $url -Split '-|\.msi' | Select-Object -Last 1 -Skip 1
 	$releaseNotes = "https://github.com/sbt/sbt/releases/tag/v${version}"
 
 	@{
