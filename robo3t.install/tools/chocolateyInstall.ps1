@@ -3,8 +3,8 @@
 $packageName = 'robo3t.install'
 $fileType = 'exe'
 $silentArgs = '/S'
-$url64 = 'https://github.com/Studio3T/robomongo/releases/download/v1.4.0/robo3t-1.4.0-windows-x86_64-a61e33c.exe'
-$checksum64 = '926804d9a00f09dbfddd146acfa5f031c6b9e650ba496f49b49eef36cf613f1a'
+$url64 = 'https://github.com/Studio3T/robomongo/releases/download/v1.4.0/robo3t-1.4.0-windows-x86_64-12e54cc.exe'
+$checksum64 = '3ef87e6426a3ab4d8babc2fdc2887e2266ef7873e65f8558556ed2a6c842308b'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 

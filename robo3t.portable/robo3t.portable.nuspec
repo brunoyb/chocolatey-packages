@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>robo3t.portable</id>
-    <version>1.4.0</version>
+    <version>1.4.0.20200907</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/robo3t.portable</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Robo 3T (Portable)</title>
