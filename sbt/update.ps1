@@ -29,6 +29,7 @@ function global:au_GetLatest {
 	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
 
 	$version = $url -Split '-|\.msi' | Select-Object -Last 1 -Skip 1
+	$url = "https://github.com/sbt/sbt/releases/download/v${version}/sbt-${version}.msi"
 	$releaseNotes = "https://github.com/sbt/sbt/releases/tag/v${version}"
 
 	@{
@@ -38,4 +39,4 @@ function global:au_GetLatest {
 	}
 }
 
-Update-Package -ChecksumFor none -NoCheckChocoVersion
+Update-Package -ChecksumFor none
