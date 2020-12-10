@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'robo3t.portable'
-$url64 = 'https://github.com/Studio3T/robomongo/releases/download/v1.4.2/robo3t-1.4.2-windows-x86_64-8650949.zip'
-$checksum64 = '6f4123c7a1d5ee7121d5f1af942e48140bb6e40008040d4caa17878324e34050'
+$url64 = 'https://github.com/Studio3T/robomongo/releases/download/v1.4.3-beta/robo3t-1.4.3-windows-x86_64-bc074e44.zip'
+$checksum64 = '4b1904b918dfce77865c90167693dbc47e61f03f7d0d8d22f414365c2dbdc0a4'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
