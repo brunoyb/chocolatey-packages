@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>robo3t</id>
-    <version>1.4.3.20210105</version>
+    <version>1.4.3.20210113</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/robo3t</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Robo 3T</title>
@@ -23,7 +23,7 @@ Formerly known as Robomongo (more info on https://robomongo.org/), Robo 3T is a 
 ]]></description>
     <releaseNotes>https://github.com/Studio3T/robomongo/blob/master/CHANGELOG</releaseNotes>
     <dependencies>
-      <dependency id="robo3t.install" version="[1.4.3.20210105]" />
+      <dependency id="robo3t.install" version="[1.4.3.20210113]" />
     </dependencies>
   </metadata>
   <files>
