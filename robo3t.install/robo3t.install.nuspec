@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>robo3t.install</id>
-    <version>1.4.3.20210210</version>
+    <version>1.4.3.20210228</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/robo3t.install</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Robo 3T (Install)</title>
