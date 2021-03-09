@@ -3,8 +3,8 @@
 $packageName = 'sbt'
 $fileType = 'msi'
 $silentArgs = '/quiet'
-$url = 'https://github.com/sbt/sbt/releases/download/v1.4.7/sbt-1.4.7.msi'
-$checksum = 'a5768bc9a97d069316b73987d31acc4c8bce979d49081980dcb51a2056e6cff2'
+$url = 'https://github.com/sbt/sbt/releases/download/v1.4.8/sbt-1.4.8.msi'
+$checksum = 'b18d31407bc5a2cf8cf94ccad130b66778ab669abb1a36a1731fae21d355eb64'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
