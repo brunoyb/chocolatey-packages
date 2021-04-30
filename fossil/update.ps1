@@ -19,7 +19,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl
 
-	$re = '\.\./timeline\?p=version-([^&]+)'
+	$re = '"Version (.+) \(\d{4}-\d{2}-\d{2}\)"'
 	if ($updatePage.Content -Match $re) {
 		$version = $Matches[1].Trim()
 		$url32 = "https://www.fossil-scm.org/home/uv/fossil-w32-${version}.zip"
