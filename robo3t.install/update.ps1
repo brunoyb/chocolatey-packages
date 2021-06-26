@@ -25,7 +25,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
 
-	$re = 'robo3t-.+-windows-x86_64-.+\.exe$'
+	$re = 'robo3t-.+-windows-x86_64-[a-fA-F0-9]+\.exe$'
 	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
 
 	$version = $url64 -Split '-' | Select-Object -Last 1 -Skip 3
