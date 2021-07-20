@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>haskell-stack</id>
-    <version>2.7.1</version>
+    <version>2.7.3</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/haskell-stack</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Haskell Stack</title>
@@ -43,7 +43,7 @@ The following package parameters can be set:
 These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoLocalBinOnPath /NoStackRoot"'`.
 ]]></description>
-    <releaseNotes>https://github.com/commercialhaskell/stack/releases/tag/v2.7.1</releaseNotes>
+    <releaseNotes>https://github.com/commercialhaskell/stack/releases/tag/v2.7.3</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
