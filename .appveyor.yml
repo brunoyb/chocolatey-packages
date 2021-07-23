@@ -21,7 +21,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: brunoyb/chocolatey-packages
   github_api_key:
-    secure: m0BRRUZsFT0naDWQr/6uqYDcvYDZeEKbsS8EZZERHMLeq7MPZN2cMKYbFocsXtLm
+    secure: czpxBy/LKNHR+ocIUNNlI+PrDxgS7bYO6nAa449FUS72pKqEAsoD0KqPkv1HQL+9
 
   # Mail credentials - for error notifications
   mail_user:
