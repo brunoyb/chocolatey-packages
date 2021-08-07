@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/mitmproxy/mitmproxy/releases/latest'
+$updateUrl = 'https://s3-us-west-2.amazonaws.com/snapshots.mitmproxy.org?delimiter=/&prefix='
 
 function global:au_SearchReplace {
 	@{
@@ -24,10 +24,12 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
 
-	$re = 'v.+\.zip$'
-	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
+	$versions = ([xml] $updatePage.Content).ListBucketResult.CommonPrefixes.Prefix |
+		ForEach-Object { $_ -Replace '/', '' } |
+		Where-Object { $_ -Match '^[\d.]+$' } |
+		ForEach-Object { [System.Version] $_ }
 
-	$version = $url -Split 'v|\.zip' | Select-Object -Last 1 -Skip 1
+	$version = ($versions | Measure-Object -Maximum).Maximum.ToString()
 	$url = "https://snapshots.mitmproxy.org/${version}/mitmproxy-${version}-windows-installer.exe"
 	$releaseNotes = "https://github.com/mitmproxy/mitmproxy/releases/tag/v${version}"
 
