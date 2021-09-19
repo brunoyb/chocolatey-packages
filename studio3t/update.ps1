@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://studio3t.com/download'
+$updateUrl = 'https://files.studio3t.com/changelog/changelog.txt'
 
 function global:au_BeforeUpdate {
 	$Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64 sha256
@@ -25,7 +25,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
 
-	$re = '\d{4}\.\d+\.\d+'
+	$re = '\d{4}\.\d{1,2}\.\d{1,2}'
 	if ($updatePage.Content -Match $re) {
 		$version = $Matches[0]
 		$url64 = "https://download.studio3t.com/studio-3t/windows/$version/studio-3t-x64.zip"
