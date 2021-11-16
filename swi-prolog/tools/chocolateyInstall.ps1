@@ -3,11 +3,11 @@
 $packageName = 'swi-prolog'
 $fileType = 'exe'
 $silentArgs = '/S'
-$url32 = 'http://www.swi-prolog.org/download/stable/bin/swipl-8.4.0-1.x86.exe'
-$checksum32 = 'c32f01520b70a232d4b672d8c0aaac62b26f4e8803cf74f8175a48353766c2a5'
+$url32 = 'http://www.swi-prolog.org/download/stable/bin/swipl-8.4.1-1.x86.exe'
+$checksum32 = '17355cd21f82d3778db53d772ab9c6c2f4df065653bbab36105ba3d4321811f9'
 $checksumType32 = 'sha256'
-$url64 = 'http://www.swi-prolog.org/download/stable/bin/swipl-8.4.0-1.x64.exe'
-$checksum64 = '707f0de518dba327a6776e755470e49ee39917c443b4707b30f7fe44e6b5cecb'
+$url64 = 'http://www.swi-prolog.org/download/stable/bin/swipl-8.4.1-1.x64.exe'
+$checksum64 = '212271267caf0b914534519d4a553feb8e4608979d635cfaba63c125461084e5'
 $checksumType64 = 'sha256'
 
 Install-ChocolateyPackage -PackageName $packageName `
