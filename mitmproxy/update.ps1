@@ -5,10 +5,10 @@ $updateUrl = 'https://s3-us-west-2.amazonaws.com/snapshots.mitmproxy.org?delimit
 function global:au_SearchReplace {
 	@{
 		".\tools\chocolateyInstall.ps1" = @{
-			"(?i)(^\s*[$]packageName\s*=\s*)('.*')"  = "`$1'$($Latest.PackageName)'"
-			"(?i)(^\s*[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL)'"
-			"(?i)(^\s*[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-			"(?i)(^\s*[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+			"(?i)(^\s*[$]packageName\s*=\s*)('.*')"    = "`$1'$($Latest.PackageName)'"
+			"(?i)(^\s*[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
+			"(?i)(^\s*[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+			"(?i)(^\s*[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
 		}
 
 		".\tools\chocolateyUninstall.ps1" = @{
@@ -30,14 +30,14 @@ function global:au_GetLatest {
 		ForEach-Object { [System.Version] $_ }
 
 	$version = ($versions | Measure-Object -Maximum).Maximum.ToString()
-	$url = "https://snapshots.mitmproxy.org/${version}/mitmproxy-${version}-windows-installer.exe"
+	$url64 = "https://snapshots.mitmproxy.org/${version}/mitmproxy-${version}-windows-x64-installer.exe"
 	$releaseNotes = "https://github.com/mitmproxy/mitmproxy/releases/tag/v${version}"
 
 	@{
 		Version = $version
-		URL = $url
+		URL64 = $url64
 		ReleaseNotes = $releaseNotes
 	}
 }
 
-Update-Package -ChecksumFor 32
+Update-Package -ChecksumFor 64
