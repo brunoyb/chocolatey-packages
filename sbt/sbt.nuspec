@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sbt</id>
-    <version>1.6.2</version>
+    <version>1.7.0</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/sbt</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>sbt</title>
@@ -23,7 +23,7 @@
     <description><![CDATA[
 sbt is a build tool for Scala, Java, and more.
 ]]></description>
-    <releaseNotes>https://github.com/sbt/sbt/releases/tag/v1.6.2</releaseNotes>
+    <releaseNotes>https://github.com/sbt/sbt/releases/tag/v1.7.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
