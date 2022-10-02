@@ -1,6 +1,8 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/monochromegane/the_platinum_searcher/releases'
+. $PSScriptRoot\..\_scripts\all.ps1
+
+$githubRepositoryUrl = 'https://github.com/monochromegane/the_platinum_searcher'
 
 function global:au_SearchReplace {
 	@{
@@ -21,21 +23,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
-
-	$re = 'pt_windows_(386|amd64)\.zip$'
-	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 2 -ExpandProperty href
-
-	$version = $url[0] -Split '/|v' | Select-Object -Last 1 -Skip 1
-	$url32 = 'https://github.com' + $url[0]
-	$url64 = 'https://github.com' + $url[1]
-	$releaseNotes = "https://github.com/monochromegane/the_platinum_searcher/releases/tag/v${version}"
+	$url = Get-GitHubReleaseUrl $githubRepositoryUrl 'pt_windows_(386|amd64)\.zip$'
+	$tag = $url[0] -Split '/' | Select-Object -Last 1 -Skip 1
 
 	@{
-		Version = $version
-		URL32 = $url32
-		URL64 = $url64
-		ReleaseNotes = $releaseNotes
+		Version = $tag.Substring(1)
+		URL32 = $url[0]
+		URL64 = $url[1]
+		ReleaseNotes = "${githubRepositoryUrl}/releases/tag/${tag}"
 	}
 }
 

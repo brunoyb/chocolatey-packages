@@ -1,6 +1,8 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/elixir-lang/elixir/releases/latest'
+. $PSScriptRoot\..\..\_scripts\all.ps1
+
+$githubRepositoryUrl = 'https://github.com/elixir-lang/elixir'
 
 function global:au_SearchReplace {
 	@{
@@ -18,19 +20,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
-
-	$re = 'Precompiled\.zip$'
-	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
-
-	$version = $url -Split '/|v' | Select-Object -Last 1 -Skip 1
-	$url = 'https://github.com' + $url
-	$releaseNotes = "https://github.com/elixir-lang/elixir/releases/tag/v${version}"
+	$url = Get-GitHubReleaseUrl $githubRepositoryUrl 'elixir-otp-25\.zip$'
+	$tag = $url -Split '/' | Select-Object -Last 1 -Skip 1
 
 	@{
-		Version = $version
+		Version = $tag.Substring(1)
 		URL = $url
-		ReleaseNotes = $releaseNotes
+		ReleaseNotes = "${githubRepositoryUrl}/releases/tag/${tag}"
 	}
 }
 

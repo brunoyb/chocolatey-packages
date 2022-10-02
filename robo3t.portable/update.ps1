@@ -1,6 +1,8 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/Studio3T/robomongo/releases/latest'
+. $PSScriptRoot\..\_scripts\all.ps1
+
+$githubRepositoryUrl = 'https://github.com/Studio3T/robomongo'
 
 function global:au_SearchReplace {
 	@{
@@ -18,19 +20,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
-
-	$re = 'robo3t-.+-windows-x86_64-[a-fA-F0-9]+\.zip$'
-	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
-
-	$version = $url64 -Split '-' | Select-Object -Last 1 -Skip 3
-	$url64 = 'https://github.com' + $url64
-	$releaseNotes = "https://github.com/Studio3T/robomongo/releases/tag/v${version}"
+	$url = Get-GitHubReleaseUrl $githubRepositoryUrl 'robo3t-.+-windows-x86_64-[a-fA-F0-9]+\.zip$'
+	$tag = $url -Split '/' | Select-Object -Last 1 -Skip 1
 
 	@{
-		Version = $version
-		URL64 = $url64
-		ReleaseNotes = $releaseNotes
+		Version = $tag.Substring(1)
+		URL64 = $url
+		ReleaseNotes = "${githubRepositoryUrl}/releases/tag/${tag}"
 	}
 }
 

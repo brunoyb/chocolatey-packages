@@ -29,7 +29,7 @@ Finally, Elixir and Erlang share the same bytecode and data types. This means yo
 ]]></description>
     <releaseNotes>https://github.com/elixir-lang/elixir/releases/tag/v1.13.4</releaseNotes>
     <dependencies>
-      <dependency id="erlang" version="18.1" />
+      <dependency id="erlang" version="25.0.4" />
     </dependencies>
   </metadata>
   <files>

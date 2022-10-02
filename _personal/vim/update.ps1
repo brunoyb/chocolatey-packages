@@ -1,6 +1,8 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/vim/vim-win32-installer/releases/latest'
+. $PSScriptRoot\..\..\_scripts\all.ps1
+
+$githubRepositoryUrl = 'https://github.com/vim/vim-win32-installer'
 
 function global:au_BeforeUpdate {
 	$Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 sha256
@@ -28,21 +30,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
-
-	$re = 'gvim_.+_(x64|x86)\.zip$'
-	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 2 -Skip 2 -ExpandProperty href
-
-	$version = $url[0] -Split '_' | Select-Object -Last 1 -Skip 1
-	$url32 = 'https://github.com' + $url[1]
-	$url64 = 'https://github.com' + $url[0]
-	$releaseNotes = "https://github.com/vim/vim-win32-installer/releases/tag/v${version}"
+	$url = Get-GitHubReleaseUrl $githubRepositoryUrl 'gvim_.+_(x64|x86)\.zip$'
+	$tag = $url[0] -Split '/' | Select-Object -Last 1 -Skip 1
 
 	@{
-		Version = $version
-		URL32 = $url32
-		URL64 = $url64
-		ReleaseNotes = $releaseNotes
+		Version = $tag.Substring(1)
+		URL32 = $url[1]
+		URL64 = $url[0]
+		ReleaseNotes = "${githubRepositoryUrl}/releases/tag/${tag}"
 	}
 }
 

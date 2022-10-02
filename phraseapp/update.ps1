@@ -1,6 +1,8 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://github.com/phrase/phraseapp-client/releases/latest'
+. $PSScriptRoot\..\_scripts\all.ps1
+
+$githubRepositoryUrl = 'https://github.com/phrase/phraseapp-client'
 
 function global:au_SearchReplace {
 	@{
@@ -18,19 +20,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
-
-	$re = 'phraseapp_windows_amd64\.exe\.zip$'
-	$url64 = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
-
-	$version = $url64 -Split '/' | Select-Object -Last 1 -Skip 1
-	$url64 = 'https://github.com' + $url64
-	$releaseNotes = "https://github.com/phrase/phraseapp-client/releases/tag/${version}"
+	$url = Get-GitHubReleaseUrl $githubRepositoryUrl 'phraseapp_windows_amd64\.exe\.zip$'
+	$tag = $url -Split '/' | Select-Object -Last 1 -Skip 1
 
 	@{
-		Version = $version
-		URL64 = $url64
-		ReleaseNotes = $releaseNotes
+		Version = $tag
+		URL64 = $url
+		ReleaseNotes = "${githubRepositoryUrl}/releases/tag/${tag}"
 	}
 }
 
