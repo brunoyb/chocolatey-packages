@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>studio3t</id>
-    <version>2023.2.0</version>
+    <version>2023.3.0</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/studio3t</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>Studio 3T</title>
