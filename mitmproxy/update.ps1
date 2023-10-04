@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://s3-us-west-2.amazonaws.com/snapshots.mitmproxy.org?delimiter=/&prefix='
+$updateUrl = 'https://downloads.mitmproxy.org/list?delimiter=/&prefix='
 
 function global:au_SearchReplace {
 	@{
@@ -30,7 +30,7 @@ function global:au_GetLatest {
 		ForEach-Object { [System.Version] $_ }
 
 	$version = ($versions | Measure-Object -Maximum).Maximum.ToString()
-	$url64 = "https://snapshots.mitmproxy.org/${version}/mitmproxy-${version}-windows-x64-installer.exe"
+	$url64 = "https://downloads.mitmproxy.org/${version}/mitmproxy-${version}-windows-x64-installer.exe"
 	$releaseNotes = "https://github.com/mitmproxy/mitmproxy/releases/tag/v${version}"
 
 	@{
