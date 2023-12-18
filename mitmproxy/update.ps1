@@ -30,7 +30,7 @@ function global:au_GetLatest {
 		ForEach-Object { [System.Version] $_ }
 
 	$version = ($versions | Measure-Object -Maximum).Maximum.ToString()
-	$url64 = "https://downloads.mitmproxy.org/${version}/mitmproxy-${version}-windows-x64-installer.exe"
+	$url64 = "https://downloads.mitmproxy.org/${version}/mitmproxy-${version}-windows-x86_64-installer.exe"
 	$releaseNotes = "https://github.com/mitmproxy/mitmproxy/releases/tag/v${version}"
 
 	@{
