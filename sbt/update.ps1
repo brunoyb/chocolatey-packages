@@ -1,6 +1,8 @@
 ﻿Import-Module AU
 
-$updateUrl = 'https://www.scala-sbt.org/download.html'
+. $PSScriptRoot\..\_scripts\all.ps1
+
+$githubRepositoryUrl = 'https://github.com/sbt/sbt'
 
 function global:au_BeforeUpdate {
 	$Latest.Checksum32 = Get-RemoteChecksum $Latest.URL sha256
@@ -23,19 +25,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$updatePage = Invoke-WebRequest -Uri $updateUrl -UseBasicParsing
-
-	$re = 'sbt-.+\.msi$'
-	$url = $updatePage.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
-
-	$version = $url -Split '-|\.msi' | Select-Object -Last 1 -Skip 1
-	$url = "https://github.com/sbt/sbt/releases/download/v${version}/sbt-${version}.msi"
-	$releaseNotes = "https://github.com/sbt/sbt/releases/tag/v${version}"
+	$url = Get-GitHubReleaseUrl $githubRepositoryUrl 'sbt-.+\.msi$'
+	$tag = $url -Split '/' | Select-Object -Last 1 -Skip 1
 
 	@{
-		Version = $version
+		Version = $tag.Substring(1)
 		URL = $url
-		ReleaseNotes = $releaseNotes
+		ReleaseNotes = "${githubRepositoryUrl}/releases/tag/${tag}"
 	}
 }
 
