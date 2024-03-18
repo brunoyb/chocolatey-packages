@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url = Get-GitHubReleaseUrl $githubRepositoryUrl 'elixir-otp-25\.zip$'
+	$url = Get-GitHubReleaseUrl $githubRepositoryUrl 'elixir-otp-26\.zip$'
 	$tag = $url -Split '/' | Select-Object -Last 1 -Skip 1
 
 	@{
