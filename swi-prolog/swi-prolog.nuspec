@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>swi-prolog</id>
-    <version>9.2.4.1</version>
+    <version>9.2.5.1</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/swi-prolog</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>SWI-Prolog</title>
