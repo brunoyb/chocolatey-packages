@@ -3,8 +3,8 @@
 $packageName = 'mitmproxy'
 $fileType = 'exe'
 $silentArgs = '--mode unattended'
-$url64 = 'https://downloads.mitmproxy.org/10.3.0/mitmproxy-10.3.0-windows-x86_64-installer.exe'
-$checksum64 = '0bd0c0e369e98486ad779f71e0ce4444c13a6864f4d5fc7c0f3ffd70b0f0984c'
+$url64 = 'https://downloads.mitmproxy.org/10.3.1/mitmproxy-10.3.1-windows-x86_64-installer.exe'
+$checksum64 = 'af3bff80b0258e0f77593306882f12e0b16327f450880c5b060d91206d0f9126'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
