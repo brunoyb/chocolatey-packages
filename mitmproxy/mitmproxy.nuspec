@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mitmproxy</id>
-    <version>10.4.0</version>
+    <version>10.4.1</version>
     <packageSourceUrl>https://github.com/brunoyb/chocolatey-packages/tree/master/mitmproxy</packageSourceUrl>
     <owners>Bruno Baldochi</owners>
     <title>mitmproxy</title>
@@ -42,7 +42,7 @@ Documentation, tutorials and distribution packages can be found on the [mitmprox
 * SSL/TLS certificates for interception are generated on the fly
 * And much, much more…
 ]]></description>
-    <releaseNotes>https://github.com/mitmproxy/mitmproxy/releases/tag/v10.4.0</releaseNotes>
+    <releaseNotes>https://github.com/mitmproxy/mitmproxy/releases/tag/v10.4.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
