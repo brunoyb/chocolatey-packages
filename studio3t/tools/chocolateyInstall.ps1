@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'studio3t'
-$url64 = 'https://download.studio3t.com/studio-3t/windows/2024.4.0/studio-3t-x64.zip'
-$checksum64 = '38c53a7c7ea04463fbd1fb8ff58c1c8265b43a6e60a1b81b873817aaa43c6629'
+$url64 = 'https://download.studio3t.com/studio-3t/windows/2024.4.1/studio-3t-x64.zip'
+$checksum64 = '15c7175e50667c055fa4533e9ca925ea7deeb12a33b59f36b66e5de4e1548e4b'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
